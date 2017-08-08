@@ -1,0 +1,306 @@
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Your page title here :)</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="nayma-css-grid.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+    .example-grid .column,
+    .example-grid .columns {
+        color: #fff;
+        background: #008FEA;
+        text-align: center;
+        border-radius: 4px;
+        font-size: .7rem;
+        text-transform: uppercase;
+        min-height: 40px;
+        line-height: 40px;
+        margin-bottom: .75rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+      xmp.html {
+    background: #eee;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    color: #222;
+    overflow: scroll;
+    padding: 15px !important;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Pure CSS navigation Sidebar - Please duplicate link list here -->
+    <input type="checkbox" id="hamburger" />
+    <label class="menuicon" for="hamburger">
+        <span></span>
+    </label>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Docs</a>
+            </li>
+            <li>
+                <a href="">GitHub</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Primary Page Layout  -->
+    <header class="section-header">
+        <div class="container">
+            <div class="row">
+                <!-- Left Navigation Side with Logo  -->
+                <nav class="left-nav">
+                    <div class="logo">
+                        <a href="">nayma-css-grid</a>
+                    </div>
+                </nav>
+                <!-- Right Navigation Side with Menu  -->
+                <nav id="right-nav" class="right-nav">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Docs</a>
+                        </li>
+                        <li>
+                            <a href="">GitHub</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="lightgrey">
+        <div class="container padding-top-80">
+            <div class="row">
+                <div class="one-half column no-padding">
+                    <h4>What is nayma.css ?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dignissimos et nostrum voluptate harum quo in debitis, esse ea, nam maiores ipsum est sunt. Ducimus saepe minus unde! Corporis, optio.
+                        <a href="https://nayma.pl" target="_blank">Nayma.pl documentation</a>.</p>
+                </div>
+                <div class="one-half column no-padding">
+                    <h4>Why nayma.css ?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, similique ipsa alias iusto. Adipisci eveniet voluptatibus incidunt rerum facilis ducimus consequatur quae laboriosam deleniti unde ea, numquam saepe aspernatur similique.
+                        <a href="https://nayma.pl" target="_blank">Nayma.pl documentation</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Grid -->
+    <section>
+        <div class="container" id="grid">
+            <h3>The grid</h3>
+            <hr>
+            <p>The grid is base on 12-column fluid/flexbox grid with a max width of <strong>1260px</strong>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. You can check everything by resize the browser. Below you can find few examples of use grid system:</p>
+            <div class="example-grid docs-example">
+                <div class="row">
+                    <div class="two columns">Two</div>
+                    <div class="ten columns">TEN
+                        <br>
+                        <div class="row">
+                            <div class="twelve columns" style="background: #000">Twelve</div>
+                        </div>
+                        <div class="row">
+                            <div class="six columns" style="background: #000">Six</div>
+                            <div class="six columns" style="background: #000">Six</div>
+                        </div>
+                        <div class="row">
+                            <div class="auto column" style="background: #000">Auto</div>
+                            <div class="auto column" style="background: #000">Auto</div>
+                            <div class="auto column" style="background: #000">Auto</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three columns">Three</div>
+                    <div class="nine columns">Nine</div>
+                </div>
+                <div class="row">
+                    <div class="four columns">Four</div>
+                    <div class="eight columns">Eight</div>
+                </div>
+                <div class="row">
+                    <div class="five columns">Five</div>
+                    <div class="seven columns">Seven</div>
+                </div>
+                <div class="row">
+                    <div class="six columns">Six</div>
+                    <div class="six columns">Six</div>
+                </div>
+                <div class="row">
+                    <div class="seven columns">Seven</div>
+                    <div class="five columns">Five</div>
+                </div>
+                <div class="row">
+                    <div class="eight columns">Eight</div>
+                    <div class="four  columns">Four</div>
+                </div>
+                <div class="row">
+                    <div class="nine columns">Nine</div>
+                    <div class="three columns">Three</div>
+                </div>
+                <div class="row">
+                    <div class="ten columns">Ten</div>
+                    <div class="two columns">Two</div>
+                </div>
+              <div class="row">
+                    <div class="eleven columns">Eleven</div>
+                    <div class="one columns">one</div>
+                </div>
+              <div class="row">
+                    <div class="auto columns">Auto</div>
+                </div>
+
+            </div>
+          <div class="row">
+                    <div class="auto columns no-padding">
+                      <p class="margin-top-30">Here you have example of use auto flex column in row element:</p>
+      <xmp class="html no-padding">
+    <div class="row">
+       <div class="auto columns">Auto</div>
+    </div>
+      </xmp>
+                      <p class="margin-top-30">So you can use <i><strong>auto column</strong></i> or <i><strong>auto columns</strong></i> class to add one, two or more column and they adjust automaticly with flexbox. You can use static options for column size like: <i><strong>one column</strong></i>, <i><strong>two columns</strong></i>, <i><strong>three columns</strong></i>, <i><strong>four columns</strong></i>, <i><strong>five columns</strong></i>, <i><strong>six columns</strong></i>, <i><strong>seven columns</strong></i>, <i><strong>eight columns</strong></i>, <i><strong>nine columns</strong></i>, <i><strong>ten columns</strong></i>, <i><strong>eleven columns</strong></i>, <i><strong>twelve columns</strong></i>, <i><strong>one-third column</strong></i>, <i><strong>two-third column</strong></i> and <i><strong>one-half column</strong></i>.</p>
+
+      <xmp class="html no-padding">
+    <div class="row">
+       <div class="one-third column">One Third</div>
+       <div class="two-third column">Two Third</div>
+    </div>
+      </xmp>
+                </div>
+                </div>
+        </div>
+    </section>
+    <section class="lightgrey">
+        <div class="container" id="typography">
+            <h3>Headings and Lists</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt fugiat velit excepturi iste quaerat tenetur aspernatur neque commodi possimus, dignissimos vero nisi blanditiis dolor, aliquam dolorem, dicta, incidunt temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti a minima, blanditiis, illo unde modi repellat hic. Praesentium officia labore ipsam velit, fuga error inventore repudiandae. Sint voluptate sed reprehenderit.</p>
+            <div>
+                <div class="row">
+                    <div class="six columns">
+                        <h1>Heading
+                            <code>&lt;h1&gt;</code>
+                        </h1>
+                        <h2>Heading
+                            <code>&lt;h2&gt;</code>
+                        </h2>
+                        <h3>Heading
+                            <code>&lt;h3&gt;</code>
+                        </h3>
+                        <h4>Heading
+                            <code>&lt;h4&gt;</code>
+                        </h4>
+                        <h5>Heading
+                            <code>&lt;h5&gt;</code>
+                        </h5>
+                        <h6>Heading
+                            <code>&lt;h6&gt;</code>
+                        </h6>
+                    </div>
+                    <div class="six columns">
+                        <ol>
+                            <li>Ordered lists also have basic styles</li>
+                            <li>
+                                They use the decimal list style
+                                <ul>
+                                    <li>Ordered and unordered can be nested</li>
+                                    <li>Can nest either type of list into the other</li>
+                                </ul>
+                            </li>
+                            <li>Last list item just for the fun</li>
+                        </ol>
+                        <hr>
+                        <ul>
+                            <li>Unordered lists have basic styles</li>
+                            <li>
+                                They use the circle list style
+                                <ul>
+                                    <li>Nested lists styled to feel right</li>
+                                    <li>Can nest either type of list into the other</li>
+                                </ul>
+                            </li>
+                            <li>Just more list items mama san</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Buttons -->
+    <section>
+        <div class="container" id="buttons">
+            <h3>Buttons</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt fugiat velit excepturi iste quaerat tenetur aspernatur neque commodi possimus, dignissimos vero nisi blanditiis dolor, aliquam dolorem, dicta, incidunt temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti a minima, blanditiis, illo unde modi repellat hic. Praesentium officia labore ipsam velit, fuga error inventore repudiandae. Sint voluptate sed reprehenderit.</p>
+            <div>
+                <div>
+                    <a class="button" href="#">Anchor button</a>
+                    <button>Button element</button>
+                    <input type="submit" value="submit input">
+                    <input type="button" value="button input">
+                </div>
+                <div>
+                    <a class="button button-primary" href="#">Anchor button</a>
+                    <button class="button-primary">Button element</button>
+                    <input class="button-primary" type="submit" value="submit input">
+                    <input class="button-primary" type="button" value="button input">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sample contact forms -->
+    <section class="lightgrey">
+        <div class="container">
+            <h3>Contact Forms</h3>
+            <hr>
+            <form>
+                <div class="row">
+                    <div class="six columns no-padding">
+                        <label for="exampleEmailInput">Your email</label>
+                        <input class="u-full-width" type="email" placeholder="test@nayma.pl" id="exampleEmailInput">
+                    </div>
+                    <div class="six columns no-padding">
+                        <label for="selectList">Reason for contacting</label>
+                        <span class="select">
+                            <select class="u-full-width" id="selectList">
+                                <option value="Option 1">Price request</option>
+                                <option value="Option 2">I want contact details</option>
+                                <option value="Option 3">Others questions</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <label for="exampleMessage">Message</label>
+                <textarea class="u-full-width" placeholder="Type in your message…" id="exampleMessage"></textarea>
+                <label class="example-send-yourself-copy">
+                    <input type="checkbox">
+                    <span class="label-body">Send a copy to yourself</span>
+                </label>
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
