@@ -1,22 +1,12 @@
 <head>
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Your page title here :)</title>
+    <title>Nayma CSS Grid Sample Page</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- CSS -->
     <link rel="stylesheet" href="nayma-css-grid.css">
-
-    <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
     <style>
     .example-grid .column,
     .example-grid .columns {
@@ -32,14 +22,15 @@
         font-weight: 300;
         letter-spacing: .1rem;
     }
-      xmp.html {
-    background: #eee;
-    border: 1px solid #dedede;
-    border-radius: 4px;
-    color: #222;
-    overflow: scroll;
-    padding: 15px !important;
-}
+
+    xmp.html {
+        background: #eee;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        color: #222;
+        overflow: scroll;
+        padding: 15px !important;
+    }
     </style>
 </head>
 
@@ -52,37 +43,37 @@
     <div class="menu">
         <ul>
             <li>
-                <a href="">Home</a>
+                <a href="index.html">Start</a>
             </li>
             <li>
-                <a href="">Docs</a>
+                <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">Dokumentacja</a>
             </li>
             <li>
-                <a href="">GitHub</a>
+                <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">GitLab</a>
             </li>
         </ul>
     </div>
     <!-- Primary Page Layout  -->
-    <header class="section-header">
+    <header>
         <div class="container">
             <div class="row">
                 <!-- Left Navigation Side with Logo  -->
                 <nav class="left-nav">
                     <div class="logo">
-                        <a href="">nayma-css-grid</a>
+                        <a href="">nayma-css-grid-pl</a>
                     </div>
                 </nav>
                 <!-- Right Navigation Side with Menu  -->
-                <nav id="right-nav" class="right-nav">
+                <nav class="right-nav">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="index.html">Start</a>
                         </li>
                         <li>
-                            <a href="">Docs</a>
+                            <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">Dokumentacja</a>
                         </li>
                         <li>
-                            <a href="">GitHub</a>
+                            <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">GitLab</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,14 +84,12 @@
         <div class="container padding-top-80">
             <div class="row">
                 <div class="one-half column no-padding">
-                    <h4>What is nayma.css ?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dignissimos et nostrum voluptate harum quo in debitis, esse ea, nam maiores ipsum est sunt. Ducimus saepe minus unde! Corporis, optio.
-                        <a href="https://nayma.pl" target="_blank">Nayma.pl documentation</a>.</p>
+                    <h4>Czym jest Nayma CSS Grid ?</h4>
+                    <p>Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework CSS dzięki któremu stworzysz prosty układ 12 column (opartych o flexbox), nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc dodania nawigacji górnej wraz z wysówanym menu bocznym w czystym kodzie CSS.</p>
                 </div>
                 <div class="one-half column no-padding">
-                    <h4>Why nayma.css ?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, similique ipsa alias iusto. Adipisci eveniet voluptatibus incidunt rerum facilis ducimus consequatur quae laboriosam deleniti unde ea, numquam saepe aspernatur similique.
-                        <a href="https://nayma.pl" target="_blank">Nayma.pl documentation</a>.</p>
+                    <h4>Dlaczego Nayma CSS grid ?</h4>
+                    <p>Nayma CSS Grid posiada wszystkie potrzebne elementy takie jak siatka kolumn, nagłówki, przyciski, formularze, tabele, menu i wiele innych. Zajmuje tylko (<strong>3kb gzip</strong>). Jest w pełni responsywny i posiada specjalne menu mobilne w czystym CSS. Oparte jest na nowoczestnych jednostkach takich jak <strong>REM</strong>, <strong>VH</strong> czy <strong>VW</strong>.</p>
                 </div>
             </div>
         </div>
@@ -108,7 +97,7 @@
     <!-- Grid -->
     <section>
         <div class="container" id="grid">
-            <h3>The grid</h3>
+            <h3>Siatka kolumn</h3>
             <hr>
             <p>The grid is base on 12-column fluid/flexbox grid with a max width of <strong>1260px</strong>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. You can check everything by resize the browser. Below you can find few examples of use grid system:</p>
             <div class="example-grid docs-example">
@@ -162,33 +151,31 @@
                     <div class="ten columns">Ten</div>
                     <div class="two columns">Two</div>
                 </div>
-              <div class="row">
+                <div class="row">
                     <div class="eleven columns">Eleven</div>
                     <div class="one columns">one</div>
                 </div>
-              <div class="row">
+                <div class="row">
                     <div class="auto columns">Auto</div>
                 </div>
-
             </div>
-          <div class="row">
-                    <div class="auto columns no-padding">
-                      <p class="margin-top-30">Here you have example of use auto flex column in row element:</p>
-      <xmp class="html no-padding">
+            <div class="row">
+                <div class="auto columns no-padding">
+                    <p class="margin-top-30">Here you have example of use auto flex column in row element:</p>
+<xmp class="html no-padding">
     <div class="row">
-       <div class="auto columns">Auto</div>
+        <div class="auto columns">Auto</div>
     </div>
-      </xmp>
-                      <p class="margin-top-30">So you can use <i><strong>auto column</strong></i> or <i><strong>auto columns</strong></i> class to add one, two or more column and they adjust automaticly with flexbox. You can use static options for column size like: <i><strong>one column</strong></i>, <i><strong>two columns</strong></i>, <i><strong>three columns</strong></i>, <i><strong>four columns</strong></i>, <i><strong>five columns</strong></i>, <i><strong>six columns</strong></i>, <i><strong>seven columns</strong></i>, <i><strong>eight columns</strong></i>, <i><strong>nine columns</strong></i>, <i><strong>ten columns</strong></i>, <i><strong>eleven columns</strong></i>, <i><strong>twelve columns</strong></i>, <i><strong>one-third column</strong></i>, <i><strong>two-third column</strong></i> and <i><strong>one-half column</strong></i>.</p>
-
-      <xmp class="html no-padding">
+</xmp>
+                    <p class="margin-top-30">So you can use <i><strong>auto column</strong></i> or <i><strong>auto columns</strong></i> class to add one, two or more column and they adjust automaticly with flexbox. You can use static options for column size like: <i><strong>one column</strong></i>, <i><strong>two columns</strong></i>, <i><strong>three columns</strong></i>, <i><strong>four columns</strong></i>, <i><strong>five columns</strong></i>, <i><strong>six columns</strong></i>, <i><strong>seven columns</strong></i>, <i><strong>eight columns</strong></i>, <i><strong>nine columns</strong></i>, <i><strong>ten columns</strong></i>, <i><strong>eleven columns</strong></i>, <i><strong>twelve columns</strong></i>, <i><strong>one-third column</strong></i>, <i><strong>two-third column</strong></i> and <i><strong>one-half column</strong></i>.</p>
+<xmp class="html no-padding">
     <div class="row">
-       <div class="one-third column">One Third</div>
-       <div class="two-third column">Two Third</div>
+        <div class="one-third column">One Third</div>
+        <div class="two-third column">Two Third</div>
     </div>
-      </xmp>
+</xmp>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
     <section class="lightgrey">
@@ -250,19 +237,19 @@
     <!-- Buttons -->
     <section>
         <div class="container" id="buttons">
-            <h3>Buttons</h3>
+            <h3>Przyciski</h3>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt fugiat velit excepturi iste quaerat tenetur aspernatur neque commodi possimus, dignissimos vero nisi blanditiis dolor, aliquam dolorem, dicta, incidunt temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti a minima, blanditiis, illo unde modi repellat hic. Praesentium officia labore ipsam velit, fuga error inventore repudiandae. Sint voluptate sed reprehenderit.</p>
+            <p>W Nayma CSS grid możemy korzystać z czterech różnych typów przycisków. Są to zwykłe odnośniki <code>&lt;a&gt;</code> z przypisaną klasą <strong>.button</strong>, elementy <code>&lt;button&gt;</code> oraz <code>&lt;input&gt;</code>. Wszystkie te elementy mogą być przyciskiem bez wypełnienia oraz z wypełnieniem.</p>
             <div>
                 <div>
-                    <a class="button" href="#">Anchor button</a>
-                    <button>Button element</button>
+                    <a class="button" href="#">Przycisk standardowy</a>
+                    <button>Przycisk button</button>
                     <input type="submit" value="submit input">
                     <input type="button" value="button input">
                 </div>
                 <div>
-                    <a class="button button-primary" href="#">Anchor button</a>
-                    <button class="button-primary">Button element</button>
+                    <a class="button button-primary" href="#">Przycisk standardowy</a>
+                    <button class="button-primary">Przycisk Button</button>
                     <input class="button-primary" type="submit" value="submit input">
                     <input class="button-primary" type="button" value="button input">
                 </div>
@@ -272,35 +259,95 @@
     <!-- Sample contact forms -->
     <section class="lightgrey">
         <div class="container">
-            <h3>Contact Forms</h3>
+            <h3>Formularz kontaktowy</h3>
             <hr>
+            <p>Każdy formularz <code>&lt;form&gt;</code> został ostylowany i możemy korzystać z takich elementów jak: <i>label</i>, <i>input</i>, <i>select</i>, <i>textarea</i> czy <i>checkbox</i>. Przykładowy formularz zawierający większość ostylowanych opcji:</p>
             <form>
                 <div class="row">
                     <div class="six columns no-padding">
-                        <label for="exampleEmailInput">Your email</label>
+                        <label for="exampleEmailInput">Twój email</label>
                         <input class="u-full-width" type="email" placeholder="test@nayma.pl" id="exampleEmailInput">
                     </div>
                     <div class="six columns no-padding">
-                        <label for="selectList">Reason for contacting</label>
+                        <label for="selectList">Wybierz temat kontaktu</label>
                         <span class="select">
                             <select class="u-full-width" id="selectList">
-                                <option value="Option 1">Price request</option>
-                                <option value="Option 2">I want contact details</option>
-                                <option value="Option 3">Others questions</option>
+                                <option value="Option 1">Wycena projektu</option>
+                                <option value="Option 2">Potrzebny dodatkowy kontakt</option>
+                                <option value="Option 3">Mam inne pytania</option>
                             </select>
                         </span>
                     </div>
                 </div>
-                <label for="exampleMessage">Message</label>
-                <textarea class="u-full-width" placeholder="Type in your message…" id="exampleMessage"></textarea>
+                <label for="exampleMessage">Wiadomość</label>
+                <textarea class="u-full-width" placeholder="Wpisz treść wiadomości..." id="exampleMessage"></textarea>
                 <label class="example-send-yourself-copy">
                     <input type="checkbox">
-                    <span class="label-body">Send a copy to yourself</span>
+                    <span class="label-body">Wyślij kopię do mnie</span>
                 </label>
-                <input class="button-primary" type="submit" value="Submit">
+                <input class="button-primary" type="submit" value="Wyślij">
             </form>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <h3>Tabele</h3>
+            <hr>
+            <p>Dodając proste tabele na naszą stronę możemy korzystać ze znaczników takich jak <i>table</i>, <i>tr</i> oraz <i>td</i>. Wszystkie one posiadają podstawowe stylowanie.
+                <br>
+                <br>Przykładowa tabela:</p>
+            <div class="row">
+                <div class="auto column">
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <th>Kolumna 1</th>
+                                <th>Kolumna 2</th>
+                                <th>Kolumna 3</th>
+                                <th>Kolumna 4</th>
+                            </tr>
+                            <tr>
+                                <td>Żaba</td>
+                                <td>Jaszczurka</td>
+                                <td>Kot</td>
+                                <td>Kameleon</td>
+                            </tr>
+                            <tr>
+                                <td>Morświn</td>
+                                <td>Rybitwa</td>
+                                <td>Szczupak</td>
+                                <td>Okoń</td>
+                            </tr>
+                            <tr>
+                                <td>Łoś</td>
+                                <td>Sarna</td>
+                                <td>Jeleń</td>
+                                <td>Żubr</td>
+                            </tr>
+                            <tr>
+                                <td>Dzik</td>
+                                <td>Jeż</td>
+                                <td>Ryś</td>
+                                <td>Lis</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="auto column">
+                    <p>
+                        <strong>Nayma CSS Grid</strong> by <a href="https://nayma.pl" target="_blank">Nayma.pl</a>. The source code is licensed
+                        <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
