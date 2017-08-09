@@ -1,15 +1,14 @@
 {
-  "name": "nayma-css-grid-pl",
-  "version": "0.4.1",
-  "description": "Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework CSS dzięki któremu stworzysz prosty układ 12 column (opartych o flexbox),
-nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc dodania nawigacji górnej wraz z wysówanym menu bocznym w czystym kodzie CSS.",
+  "name": "nayma-css-grid",
+  "version": "0.4.2",
+  "description": "Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework CSS dzięki któremu stworzysz prosty układ 12 column (opartych o flexbox), nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc dodania nawigacji górnej wraz z wysówanym menu bocznym w czystym kodzie CSS.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/naymapl/nayma-css-grid-pl.git"
+    "url": "https://gitlab.com/naymapl/nayma-css-grid.git"
   },
   "keywords": [
     "css",
@@ -19,7 +18,7 @@ nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc d
   ],
   "author": "nayma.pl",
   "license": "MIT",
-  "homepage": "https://gitlab.com/naymapl/nayma-css-grid-pl",
+  "homepage": "https://gitlab.com/naymapl/nayma-css-grid",
   "dependencies": {
   }
 }

@@ -17,7 +17,7 @@ Aby zainstalować i pobrać pakiem mozna pobrać paczkę zip z tego repozytorium
 
 ***NPM***
 ```
-npm install nayma-css-grid-pl
+npm install nayma-css-grid
 ```
 
 Następnie wystarczy w sekcji `head` strony podpiąć plik `nayma-css-grid.min.css`.

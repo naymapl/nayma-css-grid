@@ -1,5 +1,12 @@
 # Nayma CSS Grid Lista Zmian
 
+## 0.4.2
+
+### Zmiany i nowości:
+
+* Poprawiony NPM install
+* Usunięty zbędny kod css
+
 ## 0.4.1
 
 ### Zmiany i nowości:
