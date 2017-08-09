@@ -1,34 +1,20 @@
 /*! Nayma.pl CSS Grid with flexbox support v0.4.1 */
 
-/*! Montserrat font import from Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&subset=latin-ext');
-
 /* Base Styles */
-*,:before,:after{box-sizing:inherit}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&subset=latin-ext');
+*,*:before,*:after{box-sizing:border-box}
 html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}
-html {
-  box-sizing:border-box;
-  background-color:#fff;
-  -moz-osx-font-smoothing:grayscale;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-  overflow-y:scroll;
-  text-rendering:optimizeLegibility;
-  -ms-text-size-adjust:100%;
-  -webkit-text-size-adjust:100%
-}
+html {background-color:#fff;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 body {
-  color:#666;
+  color:#555;
   display:flex;
   flex-direction:column;
   font-family:Montserrat,sans-serif;
   font-size:14px;
   font-weight:300;
-  -moz-osx-font-smoothing:grayscale;
   -ms-flex-direction:column;
   -webkit-box-direction:normal;
   -webkit-box-orient:vertical;
-  -webkit-font-smoothing:antialiased;
 }
 img,embed,iframe,object,audio,video{height:auto;max-width:100%}
 iframe{border:0}
@@ -64,8 +50,8 @@ section.lightgrey{background-color:#f5f5f5}
 /* Typography */
 p{margin-top:0}
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;font-weight:400;color:#222}
-h1{font-size:3rem;line-height:1.2}
-h2{font-size:2.8rem;line-height:1.25}
+h1{font-size:2.8rem;line-height:1.2}
+h2{font-size:2.4rem;line-height:1.25}
 h3{font-size:2.2rem;line-height:1.3}
 h4{font-size:1.8rem;line-height:1.35}
 h5{font-size:1.6rem;line-height:1.5}
@@ -83,7 +69,6 @@ hr{margin-top:1rem;margin-bottom:1.5rem;border-width:0;border-top:1px solid #E1E
 /* Buttons */
 button,input,select,textarea{margin:0}
 .button,button,input[type="submit"],input[type="reset"],input[type="button"] {
-font-family:Montserrat,sans-serif;
 display:inline-block;
 height:2.6rem;
 padding:0 1.875rem;
@@ -96,7 +81,7 @@ text-transform:uppercase;
 text-decoration:none;
 white-space:nowrap;
 background-color:transparent;
-border-radius:4px;
+border-radius:3px;
 border:1px solid #bbb;
 cursor:pointer;
 box-sizing:border-box;
@@ -128,14 +113,13 @@ height:3rem;
 padding:.7rem 1rem;
 background-color:#fff;
 border:1px solid #D1D1D1;
-border-radius:4px;
+border-radius:3px;
 box-shadow:none;
 box-sizing:border-box;
 transition:all .4s ease-out
 }
 
-input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea {
--webkit-appearance:none;-moz-appearance:none;appearance:none}
+input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 textarea{min-height:7rem}
 input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus {
 border:1px solid #008FEA;outline:0}
@@ -155,15 +139,13 @@ ul ul,ul ol,ol ol,ol ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}
 li{margin-bottom:1rem}
 
 /* Tables */
-table{border-collapse:collapse;border-spacing:0;width:100%;}
-td,th{padding:0;text-align:left}
+table{border-collapse:collapse;border-spacing:0;width:100%}
 td{font-weight:300}
 th,td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid #E1E1E1;min-width:140px}
 tr:nth-child(even){background-color:#f5f5f5}
 
 /* Spacing */
-button,.button{margin-bottom:1rem}
-input,textarea,select,fieldset{margin-bottom:1rem}
+button,.button,input,textarea,select,fieldset{margin-bottom:1rem}
 pre,blockquote,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem}
 
 /* Utilities */
@@ -235,5 +217,4 @@ header .logo{font-size:1.3rem;font-weight:500;text-decoration:none}
 }
 @media screen and (max-width: 599px) {
   .right-nav{display:none}
-  .mobile-hidden{display:none}
 }
