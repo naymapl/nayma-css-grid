@@ -1,12 +1,13 @@
 <head>
     <meta charset="utf-8">
-    <title>Nayma CSS Grid Sample Page</title>
+    <title>Nayma CSS Grid Przykładowa strona</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="nayma-css-grid.css">
+    <!-- Dodatkowe style tylko dla tej strony -->
     <style>
     .example-grid .column,
     .example-grid .columns {
@@ -22,20 +23,11 @@
         font-weight: 300;
         letter-spacing: .1rem;
     }
-
-    xmp.html {
-        background: #eee;
-        border: 1px solid #dedede;
-        border-radius: 4px;
-        color: #222;
-        overflow: scroll;
-        padding: 15px !important;
-    }
     </style>
 </head>
 
 <body>
-    <!-- Pure CSS navigation Sidebar - Please duplicate link list here -->
+    <!-- Sekcja dla nawigacji moilnej. Proszę zduplikować tutaj menu -->
     <input type="checkbox" id="hamburger" />
     <label class="menuicon" for="hamburger">
         <span></span>
@@ -53,17 +45,18 @@
             </li>
         </ul>
     </div>
-    <!-- Primary Page Layout  -->
+    <!-- Koniec menu mobilnego -->
+    <!-- Sekcja Header z nawigacją  -->
     <header>
         <div class="container">
             <div class="row">
-                <!-- Left Navigation Side with Logo  -->
+                <!-- Nawigacja lewa z logo  -->
                 <nav class="left-nav">
                     <div class="logo">
                         <a href="">nayma-css-grid-pl</a>
                     </div>
                 </nav>
-                <!-- Right Navigation Side with Menu  -->
+                <!-- Nawigacja prawa z menu  -->
                 <nav class="right-nav">
                     <ul>
                         <li>
@@ -80,6 +73,7 @@
             </div>
         </div>
     </header>
+    <!-- Sekcja informacyjna -->
     <section class="lightgrey">
         <div class="container padding-top-80">
             <div class="row">
@@ -94,7 +88,7 @@
             </div>
         </div>
     </section>
-    <!-- Grid -->
+    <!-- Sekcja z siatką kolumn -->
     <section>
         <div class="container" id="grid">
             <h3>Siatka kolumn</h3>
@@ -159,25 +153,9 @@
                     <div class="auto columns">Auto</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="auto columns no-padding">
-                    <p class="margin-top-30">Here you have example of use auto flex column in row element:</p>
-<xmp class="html no-padding">
-    <div class="row">
-        <div class="auto columns">Auto</div>
-    </div>
-</xmp>
-                    <p class="margin-top-30">So you can use <i><strong>auto column</strong></i> or <i><strong>auto columns</strong></i> class to add one, two or more column and they adjust automaticly with flexbox. You can use static options for column size like: <i><strong>one column</strong></i>, <i><strong>two columns</strong></i>, <i><strong>three columns</strong></i>, <i><strong>four columns</strong></i>, <i><strong>five columns</strong></i>, <i><strong>six columns</strong></i>, <i><strong>seven columns</strong></i>, <i><strong>eight columns</strong></i>, <i><strong>nine columns</strong></i>, <i><strong>ten columns</strong></i>, <i><strong>eleven columns</strong></i>, <i><strong>twelve columns</strong></i>, <i><strong>one-third column</strong></i>, <i><strong>two-third column</strong></i> and <i><strong>one-half column</strong></i>.</p>
-<xmp class="html no-padding">
-    <div class="row">
-        <div class="one-third column">One Third</div>
-        <div class="two-third column">Two Third</div>
-    </div>
-</xmp>
-                </div>
-            </div>
         </div>
     </section>
+    <!-- Sekcja z nagłówkami i listami -->
     <section class="lightgrey">
         <div class="container" id="typography">
             <h3>Headings and Lists</h3>
@@ -234,7 +212,7 @@
             </div>
         </div>
     </section>
-    <!-- Buttons -->
+    <!-- Sekcja z przyciskami -->
     <section>
         <div class="container" id="buttons">
             <h3>Przyciski</h3>
@@ -256,7 +234,7 @@
             </div>
         </div>
     </section>
-    <!-- Sample contact forms -->
+    <!-- Sekcja z formularzem kontaktowym -->
     <section class="lightgrey">
         <div class="container">
             <h3>Formularz kontaktowy</h3>
@@ -266,12 +244,12 @@
                 <div class="row">
                     <div class="six columns no-padding">
                         <label for="exampleEmailInput">Twój email</label>
-                        <input class="u-full-width" type="email" placeholder="test@nayma.pl" id="exampleEmailInput">
+                        <input class="full-width" type="email" placeholder="test@nayma.pl" id="exampleEmailInput">
                     </div>
                     <div class="six columns no-padding">
                         <label for="selectList">Wybierz temat kontaktu</label>
                         <span class="select">
-                            <select class="u-full-width" id="selectList">
+                            <select class="full-width" id="selectList">
                                 <option value="Option 1">Wycena projektu</option>
                                 <option value="Option 2">Potrzebny dodatkowy kontakt</option>
                                 <option value="Option 3">Mam inne pytania</option>
@@ -280,7 +258,7 @@
                     </div>
                 </div>
                 <label for="exampleMessage">Wiadomość</label>
-                <textarea class="u-full-width" placeholder="Wpisz treść wiadomości..." id="exampleMessage"></textarea>
+                <textarea class="full-width" placeholder="Wpisz treść wiadomości..." id="exampleMessage"></textarea>
                 <label class="example-send-yourself-copy">
                     <input type="checkbox">
                     <span class="label-body">Wyślij kopię do mnie</span>
@@ -289,6 +267,7 @@
             </form>
         </div>
     </section>
+    <!-- Sekcja z tabelami -->
     <section>
         <div class="container">
             <h3>Tabele</h3>
@@ -296,8 +275,8 @@
             <p>Dodając proste tabele na naszą stronę możemy korzystać ze znaczników takich jak <i>table</i>, <i>tr</i> oraz <i>td</i>. Wszystkie one posiadają podstawowe stylowanie.
                 <br>
                 <br>Przykładowa tabela:</p>
-            <div class="row">
-                <div class="auto column">
+            <div class="row no-padding">
+                <div class="auto column no-padding">
                     <div style="overflow-x:auto;">
                         <table>
                             <tr>
@@ -336,6 +315,7 @@
             </div>
         </div>
     </section>
+    <!-- Sekcja Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -348,6 +328,5 @@
             </div>
         </div>
     </footer>
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Koniec strony. Poniżej dodawaj skrypty JS -->
 </body>

@@ -1,4 +1,4 @@
-/*! Nayma.pl CSS Grid with flexbox support v0.4.0 */
+/*! Nayma.pl CSS Grid with flexbox support v0.4.1 */
 
 /*! Montserrat font import from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&subset=latin-ext');
@@ -22,7 +22,7 @@ body {
   display:flex;
   flex-direction:column;
   font-family:Montserrat,sans-serif;
-  font-size:.9rem;
+  font-size:14px;
   font-weight:300;
   -moz-osx-font-smoothing:grayscale;
   -ms-flex-direction:column;
@@ -37,16 +37,8 @@ iframe{border:0}
 /* Grid */
 section{padding:6vw 0}
 section.lightgrey{background-color:#f5f5f5}
-.container{position:relative;width:100%;max-width:1260px;margin:0 auto;padding:0 1,25rem}
-.column,.columns{width:100%;float:left;padding: 0 1rem}
-.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}
-
-@media (max-width: 599px) {
-  .container{width:85%;padding:0}
-}
-
+.container{width:90vw;position:relative;max-width:1260px;margin:0 auto;padding:0 2vw}
 @media (min-width: 600px) {
-  .container{width:86%}
   .column,.columns{margin-left:1.6%}
   .column:first-child,.columns:first-child{margin-left:0}
   .auto.column,.auto.columns{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}
@@ -66,6 +58,8 @@ section.lightgrey{background-color:#f5f5f5}
   .two-thirds.column{width:66.13%}
   .one-half.column{width:49.2%}
 }
+.column,.columns{width:100%;float:left;padding: 0 1rem}
+.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}
 
 /* Typography */
 p{margin-top:0}
@@ -76,18 +70,6 @@ h3{font-size:2.2rem;line-height:1.3}
 h4{font-size:1.8rem;line-height:1.35}
 h5{font-size:1.6rem;line-height:1.5}
 h6{font-size:1.2rem;line-height:1.6}
-
-@media (min-width: 53,125rem) {
-  h1{font-size:4rem;margin-bottom:.5rem}
-  h1:not(:first-child){margin-top:1rem}
-  h2{font-size:2.8rem;margin-bottom:.5714rem}
-  h2:not(:first-child){margin-top:1.1428rem}
-  h3{font-size:2.2rem;margin-bottom:.6666rem}
-  h3:not(:first-child){margin-top:1.3333rem}
-  h4{font-size:1.8rem;margin-bottom:.8rem}
-  h5{font-size:1.125rem;margin-bottom:.8888rem}
-  h6{font-size:1rem;margin-bottom:1rem}
-}
 
 /* Links and Others */
 a{color:#008FEA;text-decoration:none;transition:all .4s ease-out}
@@ -185,9 +167,6 @@ input,textarea,select,fieldset{margin-bottom:1rem}
 pre,blockquote,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem}
 
 /* Utilities */
-.u-full-width{width:100%;box-sizing:border-box}
-.u-pull-right{float:right}
-.u-pull-left{float:left}
 .padding-top-20{padding-top:1.25rem}
 .padding-top-30{padding-top:1.875rem}
 .padding-top-50{padding-top:3.125rem}
@@ -209,6 +188,13 @@ pre,blockquote,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem}
 .margin-bottom-80{margin-bottom:5rem}
 .margin-bottom-100{margin-bottom:6.25rem}
 .no-padding{padding:0!important}
+.full-width{width:100%;box-sizing:border-box}
+.pull-right{float:right}
+.pull-left{float:left}
+.text-centered{text-align:center!important}
+@media screen and (max-width: 599px) {
+  .mobile-hidden{display:none}
+}
 
 /* Clearing */
 .container:after,.row:after,.u-cf{content:"";clear:both}
@@ -243,18 +229,11 @@ header .logo{font-size:1.3rem;font-weight:500;text-decoration:none}
 #hamburger:checked ~ .menuicon span::before{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
 #hamburger:checked ~ .menuicon span::after{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
 
-/* Navigation Media queries */
+/* Media queries for navigation */
 @media screen and (min-width: 600px) {
   .menuicon span,.menuicon span::after,.menuicon span::before{display:none}
 }
 @media screen and (max-width: 599px) {
   .right-nav{display:none}
-}
-
-/* Navigation Media queries */
-@media screen and (min-width: 600px) {
-  .menuicon span,.menuicon span::after,.menuicon span::before{display:none}
-}
-@media screen and (max-width: 599px) {
-  .right-nav{display:none}
+  .mobile-hidden{display:none}
 }

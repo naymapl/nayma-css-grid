@@ -1,5 +1,13 @@
 # Nayma CSS Grid Lista Zmian
 
+## 0.4.1
+
+### Zmiany i nowości:
+
+* Nowa klasa pomocnicza .text-centered oraz .mobile-hidden
+* Sekcja stopka (footer)
+* Usprawnienia kodu CSS
+
 ## 0.4.0
 
 ### Zmiany i nowości:

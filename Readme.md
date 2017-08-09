@@ -2,8 +2,8 @@
 
 # Prosty, lekki i responsywny framework CSS od Nayma.pl
 
-Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework CSS dzięki któremu stworzysz prosty układ 12 column (opartych o flexbox),
-nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc dodania nawigacji górnej wraz z wysówanym menu bocznym w czystym kodzie CSS.
+Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework/boilerplate CSS, dzięki któremu stworzysz prosty layout strony oparty o siatkę 12 kolumn (wspierających flexbox),
+nagłówki, listy, formularze, tabele oraz przyciski. Dodaliśmy również możliwość dodania górnej belki nawigacyjnej wraz z wysuwanym menu bocznym w czystym kodzie CSS.
 
 #### DEMO w serwisie CodePen.io: https://codepen.io/Naymapl/pen/rwpXEg
 
@@ -36,7 +36,7 @@ Siatkę kolumn tworzymy w oparciu o wiersze. Same kolumny są oparte o flexbox w
 </div>
 ```
 
-Używając klasy `auto column` lub `auto columns` dodajemy więc kolumny kor`ystające z flexbox. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:
+Używając klasy `auto column` lub `auto columns` dodajemy więc kolumny korzystające z flexbox. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:
 
 * auto column
 * auto columns
@@ -201,8 +201,6 @@ Nayma CSS Grid pozwala nam na dodanie do strony sekcji `<header>` z menu nawigac
 </header>
 ```
 
-Uwaga ! Jeśli chcemy skorzystać z wbudowanego menu mobilnego pamietajmy aby nasze menu prawe miało przypisany identyfikator `id="right-nav"`. Jest to wymagane do poprawnego działania tzw hamburger menu oraz wysuwanego menu bocznego.
-
 # Nawigacja mobilna
 
 Nawigację mobilną w czystym CSS dodajemy na samej górze naszej strony zaraz po zakończeniu sekcji `</head>`. Gotowy kod znajdziemy poniżej. Pamietajmy że musimy wyedytować nasze menu zarówno w sekcji nawigacji głównej jak i w naszym pasku bocznym. Pozwala nam to jednak na korzystanie z innych odnośników w wersji mobilnej i innego układu menu.
@@ -248,7 +246,7 @@ Do stworzenia stopki używamy znacznika `<footer>` wewnątrz którego umieszczam
 
 # Linie poziome
 
-Linie poziomą `<hr>` możemy uzywać bez żadnych dodatkowych klas.
+Linie poziomą `<hr>` możemy używać bez żadnych dodatkowych klas.
 
 # Tabele
 
@@ -304,10 +302,15 @@ Dodatkowe klasy pozwalające dodać paddingi lub marginesy od góry i z dołu or
 * margin-bottom-80
 * margin-bottom-100
 * no-padding
+* text-centered
+* full-width
+* pull-right
+* pull-left
+* mobile-hidden
 
 # Dziękujemy
 
-Mamy nadzieję, że ta prosta dokumentacja pozwoli wam zrozumieć, jak korzystać z wszystkich elementów jak i siatki kolumn. Liczymy że korzystanie z tego prostego framework/boilerplate będzie łatwe i przyjemne i przyda się podczas budowania prostych stron. W razie pytań zapraszamy do kontaktu z nami.
+Mamy nadzieję, że ta prosta dokumentacja pozwoli wam zrozumieć, jak korzystać z wszystkich elementów jak i siatki kolumn. Liczymy, że korzystanie z tego prostego framework/boilerplate będzie łatwe i przyjemne i przyda się podczas budowania prostych stron. W razie pytań zapraszamy do kontaktu z nami.
 
 Zobacz również naszą stronę: [Nayma.pl](https://nayma.pl)
 Zobacz nasz blog: [Blog Nayma.pl](https://blog.nayma.pl)
