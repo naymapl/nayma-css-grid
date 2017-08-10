@@ -2,7 +2,7 @@
 
 # Prosty, lekki i responsywny framework CSS od Nayma.pl
 
-Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework/boilerplate CSS, dzięki któremu stworzysz prosty layout strony oparty o siatkę 12 kolumn (wspierających flexbox),
+Nayma CSS Grid to prosty, lekki (*3kb gzip*), responsywny framework/boilerplate CSS, dzięki któremu stworzysz prosty layout strony oparty o siatkę 12 kolumn (wspierających flexbox),
 nagłówki, listy, formularze, tabele oraz przyciski. Dodaliśmy również możliwość dodania górnej belki nawigacyjnej wraz z wysuwanym menu bocznym w czystym kodzie CSS.
 
 #### DEMO w serwisie CodePen.io: https://codepen.io/Naymapl/pen/rwpXEg
@@ -96,15 +96,15 @@ Przykładowe listy:
 
 ```html
 <ol>
-    <li>Ordered lists also have basic styles</li>
+    <li>Podstawowe style dla list numerowanych</li>
     <li>
-        They use the decimal list style
+        Można korzystać z zagnieżdżania list
         <ul>
-            <li>Ordered and unordered can be nested</li>
-            <li>Can nest either type of list into the other</li>
+            <li>Pierwszy element nienumerowany</li>
+            <li>Drugi element nienumerowany</li>
         </ul>
     </li>
-    <li>Last list item just for the fun</li>
+    <li>Ostatni element numerowany listy</li>
 </ol>
 ```
 # Przyciski
@@ -159,7 +159,7 @@ Przykładowy formularz zawierający większość ostylowanych opcji:
         </div>
     </div>
     <label for="exampleMessage">Wiadomość</label>
-    <textarea class="u-full-width" placeholder="Type in your message…" id="exampleMessage"></textarea>
+    <textarea class="u-full-width" placeholder="Wpisz swoją wiadomość..." id="exampleMessage"></textarea>
     <label class="example-send-yourself-copy">
         <input type="checkbox">
         <span class="label-body">Wyślij kopię do mnie</span>
@@ -179,20 +179,20 @@ Nayma CSS Grid pozwala nam na dodanie do strony sekcji `<header>` z menu nawigac
             <!-- Nawigacja po stronie lewej -->
             <nav class="left-nav">
                 <div class="logo">
-                    <a href="!#">Nasze logo</a>
+                    <a href="#">Nasze logo</a>
                 </div>
             </nav>
             <!-- Nawigacja po stronie prawej  -->
-            <nav id="right-nav" class="right-nav">
+            <nav class="right-nav">
                 <ul>
                     <li>
-                        <a href="!#">Home</a>
+                        <a href="#">Start</a>
                     </li>
                     <li>
-                        <a href="!#">Docs</a>
+                        <a href="#">Dokumentacja</a>
                     </li>
                     <li>
-                        <a href="!#">GitHub</a>
+                        <a href="#">GitLabs</a>
                     </li>
                 </ul>
             </nav>
@@ -213,13 +213,13 @@ Nawigację mobilną w czystym CSS dodajemy na samej górze naszej strony zaraz p
     <div class="menu">
         <ul>
             <li>
-                <a href="">Home</a>
+                <a href="#">Start</a>
             </li>
             <li>
-                <a href="">Docs</a>
+                <a href="#">Dokumentacja</a>
             </li>
             <li>
-                <a href="">GitHub</a>
+                <a href="#">GitLab</a>
             </li>
         </ul>
     </div>

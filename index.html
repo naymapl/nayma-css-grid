@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <title>Nayma CSS Grid Przykładowa strona</title>
+    <title>Nayma CSS Grid</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Mobile Specific Metas -->
@@ -38,10 +38,10 @@
                 <a href="index.html">Start</a>
             </li>
             <li>
-                <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">Dokumentacja</a>
+                <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
             </li>
             <li>
-                <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">GitLab</a>
+                <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">GitLab</a>
             </li>
         </ul>
     </div>
@@ -63,10 +63,10 @@
                             <a href="index.html">Start</a>
                         </li>
                         <li>
-                            <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">Dokumentacja</a>
+                            <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
                         </li>
                         <li>
-                            <a href="https://gitlab.com/naymapl/nayma-css-grid-pl" target="_blank">GitLab</a>
+                            <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">GitLab</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,7 +93,40 @@
         <div class="container" id="grid">
             <h4>Siatka kolumn</h4>
             <hr>
-            <p>The grid is base on 12-column fluid/flexbox grid with a max width of <strong>1260px</strong>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. You can check everything by resize the browser. Below you can find few examples of use grid system:</p>
+            <p>Siatka Nayma CSS Grid korzysta z 12 kolumn, które ustawiamy na sztywno lub z pomocą flexbox. Szerokość kontenera ma maksymalnie <strong>1260px</strong>, jednak można ją zmienić edytując jedną wartość w pliku css. Siatkę kolumn tworzymy w oparciu o wiersze o klasie <strong>.row</strong>. Same kolumny są oparte o flexbox więc wypełniają wiersz automatycznie. Korzystając z klasy `auto column` lub `auto columns` dodajemy kolumny korzystające z flexbox i wypełnia one wiersz automatycznie. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:</p>
+            <div class="row">
+                <div class="four columns">
+                    <ul>
+                        <li>auto column</li>
+                        <li>auto columns</li>
+                        <li>one column</li>
+                        <li>one columns</li>
+                        <li>two columns</li>
+                        <li>three columns</li>
+                    </ul>
+                </div>
+                <div class="four columns">
+                    <ul>
+                        <li>four columns</li>
+                        <li>five columns</li>
+                        <li>six columns</li>
+                        <li>seven columns</li>
+                        <li>eight columns</li>
+                        <li>nine columns</li>
+                        <ul>
+                </div>
+                <div class="four columns">
+                    <ul>
+                        <li>ten columns</li>
+                        <li>eleven columns</li>
+                        <li>twelve columns</li>
+                        <li>one-third column</li>
+                        <li>two-third column</li>
+                        <li>one-half column</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Poniżej przykład naszej siatki:</p>
             <div class="example-grid docs-example">
                 <div class="row">
                     <div class="two columns">Two</div>
@@ -158,54 +191,54 @@
     <!-- Sekcja z nagłówkami i listami -->
     <section class="lightgrey">
         <div class="container" id="typography">
-            <h4>Headings and Lists</h4>
+            <h4>Nagłówki i listy</h4>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt fugiat velit excepturi iste quaerat tenetur aspernatur neque commodi possimus, dignissimos vero nisi blanditiis dolor, aliquam dolorem, dicta, incidunt temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti a minima, blanditiis, illo unde modi repellat hic. Praesentium officia labore ipsam velit, fuga error inventore repudiandae. Sint voluptate sed reprehenderit.</p>
+            <p>Wszystkie nagłówki od <strong>h1</strong> do <strong>h6</strong> zostały ostylowane i nie są wymagane żadne dodatkowe działania. Nayma CSS Grid korzysta z 2 standardowych typów list <strong>ul</strong> oraz <strong>ol</strong>. Elementy te zostały ostylowane i nie są wymagane żadne dodatkowe działania. Przykładowe nagłówki i listy poniżej:</p>
             <div>
                 <div class="row">
                     <div class="six columns">
-                        <h1>Heading
+                        <h1>Nagłówek
                             <code>&lt;h1&gt;</code>
                         </h1>
-                        <h2>Heading
+                        <h2>Nagłówek
                             <code>&lt;h2&gt;</code>
                         </h2>
-                        <h3>Heading
+                        <h3>Nagłówek
                             <code>&lt;h3&gt;</code>
                         </h3>
-                        <h4>Heading
+                        <h4>Nagłówek
                             <code>&lt;h4&gt;</code>
                         </h4>
-                        <h5>Heading
+                        <h5>Nagłówek
                             <code>&lt;h5&gt;</code>
                         </h5>
-                        <h6>Heading
+                        <h6>Nagłówek
                             <code>&lt;h6&gt;</code>
                         </h6>
                     </div>
                     <div class="six columns">
                         <ol>
-                            <li>Ordered lists also have basic styles</li>
+                            <li>Podstawowe style dla list numerowanych</li>
                             <li>
-                                They use the decimal list style
+                                Można korzystać z zagnieżdżania list
                                 <ul>
-                                    <li>Ordered and unordered can be nested</li>
-                                    <li>Can nest either type of list into the other</li>
+                                    <li>Pierwszy element nienumerowany</li>
+                                    <li>Drugi element nienumerowany</li>
                                 </ul>
                             </li>
-                            <li>Last list item just for the fun</li>
+                            <li>Ostatni element numerowany listy</li>
                         </ol>
                         <hr>
                         <ul>
-                            <li>Unordered lists have basic styles</li>
+                            <li>Nienumerowane listy też mają podstawowe stylowanie</li>
                             <li>
-                                They use the circle list style
+                                Można korzystać z zagnieżdżania list
                                 <ul>
-                                    <li>Nested lists styled to feel right</li>
-                                    <li>Can nest either type of list into the other</li>
+                                    <li>Pierwszy element zagnieżdżony listy</li>
+                                    <li>Drugi element zagnieżdżony listy</li>
                                 </ul>
                             </li>
-                            <li>Just more list items mama san</li>
+                            <li>Ostatni element listy</li>
                         </ul>
                     </div>
                 </div>

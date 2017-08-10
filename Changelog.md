@@ -1,5 +1,13 @@
 # Nayma CSS Grid Lista Zmian
 
+## 0.4.3
+
+### Zmiany i nowości:
+
+* Dokończona dokumentacja
+* Dokończony plik index.html
+* Usunięty zbędny kod css
+
 ## 0.4.2
 
 ### Zmiany i nowości:
