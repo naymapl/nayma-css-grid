@@ -43,6 +43,8 @@
             <li>
                 <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">GitLab</a>
             </li>
+                                        <a class="button is-inverted" href="#">Download</a>
+
         </ul>
     </div>
     <!-- Koniec menu mobilnego -->
@@ -58,30 +60,35 @@
                 </nav>
                 <!-- Nawigacja prawa z menu  -->
                 <nav class="right-nav">
-                    <ul>
-                        <li>
-                            <a href="index.html">Start</a>
-                        </li>
-                        <li>
-                            <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
-                        </li>
-                        <li>
-                            <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">GitLab</a>
-                        </li>
-                    </ul>
+                            <a class="nav-link" href="index.html">Start</a>
+                            <a class="nav-link" href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
+                            <a class="nav-link" href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">GitLab</a>
+                            <a class="button button-primary is-button-nav" href="#">Download</a>
                 </nav>
             </div>
         </div>
     </header>
+    <!-- Sekcja hero -->
+    <section class="hero padding-top-100">
+        <div class="container">
+            <div class="row padding-top-50">
+                <div class="column no-padding">
+                    <div class="title">Nayma CSS Grid</div>
+                    <div class="subtitle">Prosty, lekki i responsywny framework CSS od Nayma.pl</div>
+                    <a class="button is-inverted" href="#">Zobacz więcej</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Sekcja informacyjna -->
     <section class="lightgrey">
-        <div class="container padding-top-80">
+        <div class="container">
             <div class="row">
-                <div class="one-half column no-padding">
+                <div class="column no-padding">
                     <h4>Czym jest Nayma CSS Grid ?</h4>
                     <p>Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework CSS dzięki któremu stworzysz prosty układ 12 column (opartych o flexbox), nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc dodania nawigacji górnej wraz z wysówanym menu bocznym w czystym kodzie CSS.</p>
                 </div>
-                <div class="one-half column no-padding">
+                <div class="column no-padding">
                     <h4>Dlaczego Nayma CSS grid ?</h4>
                     <p>Nayma CSS Grid posiada wszystkie potrzebne elementy takie jak siatka kolumn, nagłówki, przyciski, formularze, tabele, menu i wiele innych. Zajmuje tylko (<strong>3kb gzip</strong>). Jest w pełni responsywny i posiada specjalne menu mobilne w czystym CSS. Oparte jest na nowoczestnych jednostkach takich jak <strong>REM</strong>, <strong>VH</strong> czy <strong>VW</strong>.</p>
                 </div>
@@ -93,97 +100,102 @@
         <div class="container" id="grid">
             <h4>Siatka kolumn</h4>
             <hr>
-            <p>Siatka Nayma CSS Grid korzysta z 12 kolumn, które ustawiamy na sztywno lub z pomocą flexbox. Szerokość kontenera ma maksymalnie <strong>1260px</strong>, jednak można ją zmienić edytując jedną wartość w pliku css. Siatkę kolumn tworzymy w oparciu o wiersze o klasie <strong>.row</strong>. Same kolumny są oparte o flexbox więc wypełniają wiersz automatycznie. Korzystając z klasy `auto column` lub `auto columns` dodajemy kolumny korzystające z flexbox i wypełnia one wiersz automatycznie. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:</p>
+            <p>Siatka Nayma CSS Grid korzysta z układu 12 kolumn, które pozycjonowane są za pomocą flexbox lub przy pomocy dodatkowych klas css. Szerokość kontenera ma maksymalnie <strong>1260px</strong>, jednak można ją zmienić edytując jedną wartość w pliku css. Siatkę kolumn tworzymy w oparciu o wiersze o klasie <strong>.row</strong>. Kolumny dodajemy w formie div o klasie <strong>column</strong>. Kolumny wypełnią wiersz automatycznie dopasowując szerokość. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:</p>
             <div class="row">
-                <div class="four columns">
+                <div class="column">
                     <ul>
-                        <li>auto column</li>
-                        <li>auto columns</li>
-                        <li>one column</li>
-                        <li>one columns</li>
-                        <li>two columns</li>
-                        <li>three columns</li>
+                        <li>column is-1</li>
+                        <li>column is-2</li>
+                        <li>column is-3</li>
+                        <li>column is-4</li>
+                        <li>column is-5</li>
                     </ul>
                 </div>
-                <div class="four columns">
+                <div class="column">
                     <ul>
-                        <li>four columns</li>
-                        <li>five columns</li>
-                        <li>six columns</li>
-                        <li>seven columns</li>
-                        <li>eight columns</li>
-                        <li>nine columns</li>
+                        <li>column is-6</li>
+                        <li>column is-7</li>
+                        <li>column is-8</li>
+                        <li>column is-9</li>
+                        <li>column is-10</li>
+
                         <ul>
                 </div>
-                <div class="four columns">
+                <div class="column">
                     <ul>
-                        <li>ten columns</li>
-                        <li>eleven columns</li>
-                        <li>twelve columns</li>
-                        <li>one-third column</li>
-                        <li>two-third column</li>
-                        <li>one-half column</li>
+                        <li>column is-11</li>
+                        <li>column is-12</li>
+                        <li>column is-one-third</li>
+                        <li>column is-two-third</li>
+                        <li>column is-half</li>
                     </ul>
                 </div>
             </div>
             <p>Poniżej przykład naszej siatki:</p>
             <div class="example-grid docs-example">
                 <div class="row">
-                    <div class="two columns">Two</div>
-                    <div class="ten columns">TEN
+                    <div class="column">auto</div>
+                    <div class="column">auto</div>
+                    <div class="column">auto</div>
+                    <div class="column">auto</div>
+                    <div class="column">auto</div>
+                </div>
+                <div class="row">
+                    <div class="column is-2">is-2</div>
+                    <div class="column is-10">is-10
                         <br>
                         <div class="row">
-                            <div class="twelve columns" style="background: #000">Twelve</div>
+                            <div class="column is-12" style="background: #000">is-12</div>
                         </div>
                         <div class="row">
-                            <div class="six columns" style="background: #000">Six</div>
-                            <div class="six columns" style="background: #000">Six</div>
+                            <div class="column is-6" style="background: #000">is-6</div>
+                            <div class="column is-6" style="background: #000">is-6</div>
                         </div>
                         <div class="row">
-                            <div class="auto column" style="background: #000">Auto</div>
-                            <div class="auto column" style="background: #000">Auto</div>
-                            <div class="auto column" style="background: #000">Auto</div>
+                            <div class="column" style="background: #000">Auto</div>
+                            <div class="column" style="background: #000">Auto</div>
+                            <div class="column" style="background: #000">Auto</div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="three columns">Three</div>
-                    <div class="nine columns">Nine</div>
+                    <div class="column is-3">is-3</div>
+                    <div class="column is-9">is-9</div>
                 </div>
                 <div class="row">
-                    <div class="four columns">Four</div>
-                    <div class="eight columns">Eight</div>
+                    <div class="column is-4">is-4</div>
+                    <div class="column is-8">is-8</div>
                 </div>
                 <div class="row">
-                    <div class="five columns">Five</div>
-                    <div class="seven columns">Seven</div>
+                    <div class="column is-5">is-5</div>
+                    <div class="column is-7">is-7</div>
                 </div>
                 <div class="row">
-                    <div class="six columns">Six</div>
-                    <div class="six columns">Six</div>
+                    <div class="column is-6">is-6</div>
+                    <div class="column is-6">is-6</div>
                 </div>
                 <div class="row">
-                    <div class="seven columns">Seven</div>
-                    <div class="five columns">Five</div>
+                    <div class="column is-7">is-7</div>
+                    <div class="column is-5">is-5</div>
                 </div>
                 <div class="row">
-                    <div class="eight columns">Eight</div>
-                    <div class="four  columns">Four</div>
+                    <div class="column is-8">is-8</div>
+                    <div class="column is-4">is-4</div>
                 </div>
                 <div class="row">
-                    <div class="nine columns">Nine</div>
-                    <div class="three columns">Three</div>
+                    <div class="column is-9">is-9</div>
+                    <div class="column is-3">is-3</div>
                 </div>
                 <div class="row">
-                    <div class="ten columns">Ten</div>
-                    <div class="two columns">Two</div>
+                    <div class="column is-10">is-10</div>
+                    <div class="column is-2">is-2</div>
                 </div>
                 <div class="row">
-                    <div class="eleven columns">Eleven</div>
-                    <div class="one columns">one</div>
+                    <div class="column is-11">is-11</div>
+                    <div class="column is-1">is-1</div>
                 </div>
                 <div class="row">
-                    <div class="auto columns">Auto</div>
+                    <div class="column">Auto</div>
                 </div>
             </div>
         </div>
@@ -196,7 +208,7 @@
             <p>Wszystkie nagłówki od <strong>h1</strong> do <strong>h6</strong> zostały ostylowane i nie są wymagane żadne dodatkowe działania. Nayma CSS Grid korzysta z 2 standardowych typów list <strong>ul</strong> oraz <strong>ol</strong>. Elementy te zostały ostylowane i nie są wymagane żadne dodatkowe działania. Przykładowe nagłówki i listy poniżej:</p>
             <div>
                 <div class="row">
-                    <div class="six columns">
+                    <div class="column">
                         <h1>Nagłówek
                             <code>&lt;h1&gt;</code>
                         </h1>
@@ -216,7 +228,7 @@
                             <code>&lt;h6&gt;</code>
                         </h6>
                     </div>
-                    <div class="six columns">
+                    <div class="column">
                         <ol>
                             <li>Podstawowe style dla list numerowanych</li>
                             <li>
@@ -252,13 +264,13 @@
             <hr>
             <p>W Nayma CSS grid możemy korzystać z czterech różnych typów przycisków. Są to zwykłe odnośniki <code>&lt;a&gt;</code> z przypisaną klasą <strong>.button</strong>, elementy <code>&lt;button&gt;</code> oraz <code>&lt;input&gt;</code>. Wszystkie te elementy mogą być przyciskiem bez wypełnienia oraz z wypełnieniem.</p>
             <div>
-                <div>
+                <div class="is-text-centered">
                     <a class="button" href="#">Przycisk standardowy</a>
                     <button>Przycisk button</button>
                     <input type="submit" value="submit input">
                     <input type="button" value="button input">
                 </div>
-                <div>
+                <div class="is-text-centered">
                     <a class="button button-primary" href="#">Przycisk standardowy</a>
                     <button class="button-primary">Przycisk Button</button>
                     <input class="button-primary" type="submit" value="submit input">
@@ -275,14 +287,14 @@
             <p>Każdy formularz <code>&lt;form&gt;</code> został ostylowany i możemy korzystać z takich elementów jak: <i>label</i>, <i>input</i>, <i>select</i>, <i>textarea</i> czy <i>checkbox</i>. Przykładowy formularz zawierający większość ostylowanych opcji:</p>
             <form>
                 <div class="row">
-                    <div class="six columns no-padding">
+                    <div class="column no-padding">
                         <label for="exampleEmailInput">Twój email</label>
-                        <input class="full-width" type="email" placeholder="test@nayma.pl" id="exampleEmailInput">
+                        <input class="is-fullwidth" type="email" placeholder="test@nayma.pl" id="exampleEmailInput">
                     </div>
-                    <div class="six columns no-padding">
+                    <div class="column no-padding">
                         <label for="selectList">Wybierz temat kontaktu</label>
                         <span class="select">
-                            <select class="full-width" id="selectList">
+                            <select class="is-fullwidth" id="selectList">
                                 <option value="Option 1">Wycena projektu</option>
                                 <option value="Option 2">Potrzebny dodatkowy kontakt</option>
                                 <option value="Option 3">Mam inne pytania</option>
@@ -291,7 +303,7 @@
                     </div>
                 </div>
                 <label for="exampleMessage">Wiadomość</label>
-                <textarea class="full-width" placeholder="Wpisz treść wiadomości..." id="exampleMessage"></textarea>
+                <textarea class="is-fullwidth" placeholder="Wpisz treść wiadomości..." id="exampleMessage"></textarea>
                 <label class="example-send-yourself-copy">
                     <input type="checkbox">
                     <span class="label-body">Wyślij kopię do mnie</span>
@@ -309,9 +321,9 @@
                 <br>
                 <br>Przykładowa tabela:</p>
             <div class="row no-padding">
-                <div class="auto column no-padding">
+                <div class="column no-padding">
                     <div style="overflow-x:auto;">
-                        <table>
+                        <table class="is-fullwidth">
                             <tr>
                                 <th>Kolumna 1</th>
                                 <th>Kolumna 2</th>
@@ -352,7 +364,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="auto column">
+                <div class="column">
                     <p>
                         <strong>Nayma CSS Grid</strong> by <a href="https://nayma.pl" target="_blank">Nayma.pl</a>. The source code is licensed
                         <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.

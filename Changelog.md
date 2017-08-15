@@ -1,5 +1,17 @@
 # Nayma CSS Grid Lista Zmian
 
+## 0.5.0
+
+### Zmiany i nowości:
+
+* Całkowicie przepisany syntax dla siatki kolumn. Jest teraz dużo prościej.
+* Usprawnione menu i nawigacja górna.
+* Dodano możliwość dodawania przycisków do menu
+* Dodano sekcję hero
+* Dodano przycisk .is-inverted
+* Usunięty zbędny kod css
+* Wiele innych poprawek kodu i usprawnień
+
 ## 0.4.4
 
 ### Zmiany i nowości:

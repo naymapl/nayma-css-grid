@@ -32,39 +32,49 @@ Siatkę kolumn tworzymy w oparciu o wiersze. Same kolumny są oparte o flexbox w
 
 ```html
 <div class="row">
-   <div class="auto column">Auto</div>
+   <div class="column">Auto</div>
 </div>
 ```
 
-Używając klasy `auto column` lub `auto columns` dodajemy więc kolumny korzystające z flexbox. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:
+Używając klasy `column` dodajemy więc kolumny korzystające z flexbox. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:
 
-* auto column
-* auto columns
-* one column
-* one columns
-* two columns
-* three columns
-* four columns
-* five columns
-* six columns
-* seven columns
-* eight columns
-* nine columns
-* ten columns
-* eleven columns
-* twelve columns
-* one-third column
-* two-third column
-* one-half column
+* column
+* column is-1
+* column is-2
+* column is-3
+* column is-4
+* column is-5
+* column is-6
+* column is-7
+* column is-8
+* column is-9
+* column is-10
+* column is-11
+* column is-12
+* column is-one-third
+* column is-two-third
+* column is-half
 
 Dla przykładu układ kolumn 1/3 oraz 2/3 wygladać będzie następująco:
 
 ```html
 <div class="row">
-   <div class="one-third column">One Third</div>
-   <div class="two-third column">Two Third</div>
+   <div class="column is-one-third">One Third</div>
+   <div class="column is-two-third">Two Third</div>
 </div>
 ```
+
+Możemy również łączyć kolumny oparte o flexbox z tymi które mają zdefiniowaną stałą szerokość:
+
+```html
+<div class="row">
+   <div class="column is-one-third">One Third</div>
+   <div class="column">Auto</div>
+   <div class="column">Auto</div>
+   <div class="column">Auto</div>
+</div>
+```
+
 Mamy nadzieję, że wszystko jest proste i zrozumiałe dla każdego.
 
 # Sekcje
@@ -74,14 +84,30 @@ Możemy korzystać z sekcji `<section>`, która posiada tło białe lub `<sectio
 Przykładowy kod sekcji:
 
 ```html
-<div class="section">
+<section>
     <div class="container">
         <div class="row">
             <div class="one-third column">One Third</div>
             <div class="two-third column">Two Third</div>
         </div>
     </div>
-</div>
+</section>
+```
+Od wersji 0.5.0 dostępna jest także sekcja `hero` o tle niebieskim. Kolor oczywiście możemy edytować w pliku css.
+Przykładowy kod html dla sekcji `hero`:
+
+```html
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="title">Nayma CSS Grid</div>
+                <div class="subtitle">Prosty, lekki i responsywny framework CSS od Nayma.pl</div>
+                <a class="button is-inverted" href="#">Zobacz więcej</a>
+            </div>
+        </div>
+    </div>
+</section>
 ```
 
 # Nagłówki
@@ -127,6 +153,7 @@ Przykład przycisków z wypełnieniem. Wystarczy użyć klasy `.button-primary`:
 <input class="button-primary" type="submit" value="submit input">
 <input class="button-primary" type="button" value="button input">
 ```
+Dodatkowo mamy do dyspozycji klasy `.is-inverted` dla guzików, które umieszczamy na ciemnym tle. Dla przycisków, które chcemy umieścić w pasku nawigacji stosujemy klasę `.is-button-nav`.
 
 # Formularze
 
@@ -170,31 +197,22 @@ Przykładowy formularz zawierający większość ostylowanych opcji:
 
 # Nawigacja
 
-Nayma CSS Grid pozwala nam na dodanie do strony sekcji `<header>` z menu nawigacyjnym. Nawigację możemy dodać korzystając z znaczników `<nav>`. Możemy dodatkowo podzielić naszą belkę górną na 2 kolumny dzięki klasą `<nav class="left-nav">` oraz `<nav class="right-nav">`. Przykładowe menu z logo po lewej stronie oraz prostym menu w formie listy `<ul>` po stronie prawej:
+Nayma CSS Grid pozwala nam na dodanie do strony sekcji `<header>` z menu nawigacyjnym. Nawigację możemy dodać korzystając z znaczników `<nav>`. Możemy dodatkowo podzielić naszą belkę górną na 2 kolumny dzięki klasą `<nav class="left-nav">` oraz `<nav class="right-nav">`. Przykładowe menu z logo po lewej stronie oraz prostym menu po stronie prawej:
 
 ```html
 <header>
     <div class="container">
         <div class="row">
-            <!-- Nawigacja po stronie lewej -->
             <nav class="left-nav">
                 <div class="logo">
-                    <a href="#">Nasze logo</a>
+                    <a href="#">Logo</a>
                 </div>
             </nav>
-            <!-- Nawigacja po stronie prawej  -->
             <nav class="right-nav">
-                <ul>
-                    <li>
-                        <a href="#">Start</a>
-                    </li>
-                    <li>
-                        <a href="#">Dokumentacja</a>
-                    </li>
-                    <li>
-                        <a href="#">GitLabs</a>
-                    </li>
-                </ul>
+                <a class="nav-link" href="#">Start</a>
+                <a class="nav-link" href="#">Dokumentacja</a>
+                <a class="nav-link" href="#">GitLab</a>
+                <a class="button button-primary is-button-nav" href="#">Download</a>
             </nav>
         </div>
     </div>
@@ -281,32 +299,32 @@ Przykładowy kod HTML prostej tabeli:
 
 Dodatkowe klasy pozwalające dodać paddingi lub marginesy od góry i z dołu oraz klasa kasująca wszystkie marginesy i paddingi:
 
-* padding-top-20
-* padding-top-30
-* padding-top-50
-* padding-top-80
-* padding-top-100
-* padding-bottom-20
-* padding-bottom-30
-* padding-bottom-50
-* padding-bottom-80
-* padding-bottom-100
-* margin-top-20
-* margin-top-30
-* margin-top-50
-* margin-top-80
-* margin-top-100
-* margin-bottom-20
-* margin-bottom-30
-* margin-bottom-50
-* margin-bottom-80
-* margin-bottom-100
-* no-padding
-* text-centered
-* full-width
-* pull-right
-* pull-left
-* mobile-hidden
+* .padding-top-20
+* .padding-top-30
+* .padding-top-50
+* .padding-top-80
+* .padding-top-100
+* .padding-bottom-20
+* .padding-bottom-30
+* .padding-bottom-50
+* .padding-bottom-80
+* .padding-bottom-100
+* .margin-top-20
+* .margin-top-30
+* .margin-top-50
+* .margin-top-80
+* .margin-top-100
+* .margin-bottom-20
+* .margin-bottom-30
+* .margin-bottom-50
+* .margin-bottom-80
+* .margin-bottom-100
+* .no-padding
+* .is-text-centered
+* .is-fullwidth
+* .is-pull-right
+* .is-pull-left
+* .is-hidden-mobile
 
 # Dziękujemy
 
