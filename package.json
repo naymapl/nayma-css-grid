@@ -1,6 +1,6 @@
 {
   "name": "nayma-css-grid",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework CSS dzięki któremu stworzysz prosty układ 12 column (opartych o flexbox), nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc dodania nawigacji górnej wraz z wysówanym menu bocznym w czystym kodzie CSS.",
   "main": "index.html",
   "scripts": {

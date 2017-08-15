@@ -1,5 +1,11 @@
 # Nayma CSS Grid Lista Zmian
 
+## 0.5.1
+
+### Zmiany i nowości:
+
+* Poprawki do wersji zminifikowanej.
+
 ## 0.5.0
 
 ### Zmiany i nowości:
