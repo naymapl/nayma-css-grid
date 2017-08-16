@@ -7,6 +7,9 @@ nagłówki, listy, formularze, tabele oraz przyciski. Dodaliśmy również możl
 
 #### DEMO w serwisie CodePen.io: https://codepen.io/Naymapl/pen/rwpXEg
 
+#### GitHub: https://github.com/naymaeu/nayma-css-grid
+#### GitLab: https://gitlab.com/naymapl/nayma-css-grid
+
 # Dlaczego Nayma CSS grid ?
 
 Nayma CSS Grid posiada wszystkie potrzebne elementy takie jak siatka kolumn, nagłówki, przyciski, formularze, tabele, menu i wiele innych. Zajmuje tylko (3kb gzip). Jest w pełni responsywny i posiada specjalne menu mobilne w czystym CSS. Oparte jest na nowoczestnych jednostkach takich jak `REM`, `VH` czy `VW`.

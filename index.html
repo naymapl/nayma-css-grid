@@ -15,12 +15,11 @@
         background: #008FEA;
         text-align: center;
         border-radius: 3px;
-        font-size: .7rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
         min-height: 40px;
         line-height: 40px;
         margin-bottom: .75rem;
-        font-weight: 300;
         letter-spacing: .1rem;
     }
     </style>
@@ -41,9 +40,9 @@
                 <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
             </li>
             <li>
-                <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">GitLab</a>
+                <a href="https://github.com/naymaeu/nayma-css-grid" target="_blank">GitHub</a>
             </li>
-                                        <a class="button is-inverted" href="#">Download</a>
+                                        <a class="button is-inverted" href="https://github.com/naymaeu/nayma-css-grid/archive/master.zip">Download</a>
 
         </ul>
     </div>
@@ -62,16 +61,18 @@
                 <nav class="right-nav">
                             <a class="nav-link" href="index.html">Start</a>
                             <a class="nav-link" href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
-                            <a class="nav-link" href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">GitLab</a>
-                            <a class="button button-primary is-button-nav" href="#">Download</a>
+                            <a class="nav-link" href="https://github.com/naymaeu/nayma-css-grid" target="_blank">GitHub</a>
+                            <a class="button button-primary is-button-nav" href="https://github.com/naymaeu/nayma-css-grid/archive/master.zip">Download</a>
                 </nav>
             </div>
         </div>
     </header>
+    <!-- Move page 4.4rem down -->
+    <div class="nav-fix"></div>
     <!-- Sekcja hero -->
-    <section class="hero padding-top-100">
+    <section class="hero">
         <div class="container">
-            <div class="row padding-top-50">
+            <div class="row">
                 <div class="column no-padding">
                     <div class="title">Nayma CSS Grid</div>
                     <div class="subtitle">Prosty, lekki i responsywny framework CSS od Nayma.pl</div>
@@ -285,7 +286,10 @@
             <h4>Formularz kontaktowy</h4>
             <hr>
             <p>Każdy formularz <code>&lt;form&gt;</code> został ostylowany i możemy korzystać z takich elementów jak: <i>label</i>, <i>input</i>, <i>select</i>, <i>textarea</i> czy <i>checkbox</i>. Przykładowy formularz zawierający większość ostylowanych opcji:</p>
-            <form>
+            <div class="row">
+                <div class="column is-1 is-hidden-mobile"></div>
+                <div class="column is-10">
+                                <form>
                 <div class="row">
                     <div class="column no-padding">
                         <label for="exampleEmailInput">Twój email</label>
@@ -304,12 +308,15 @@
                 </div>
                 <label for="exampleMessage">Wiadomość</label>
                 <textarea class="is-fullwidth" placeholder="Wpisz treść wiadomości..." id="exampleMessage"></textarea>
-                <label class="example-send-yourself-copy">
+                <label class="is-pull-left">
                     <input type="checkbox">
-                    <span class="label-body">Wyślij kopię do mnie</span>
+                    <span class="">Wyślij kopię do mnie</span>
                 </label>
-                <input class="button-primary" type="submit" value="Wyślij">
+                <input class="button-primary is-pull-right" type="submit" value="Wyślij">
             </form>
+                </div>
+                <div class="column is-1 is-hidden-mobile"></div>
+            </div>
         </div>
     </section>
     <!-- Sekcja z tabelami -->
