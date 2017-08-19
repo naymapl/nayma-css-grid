@@ -1,6 +1,6 @@
 {
   "name": "nayma-css-grid",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Nayma CSS Grid is dead simple, light (3kb gziped), responsive CSS framework/boilerplate whith twelve columns layout (whith use flexbox) to build simple websites. You will get styles for elements like headers, lists, forms buttons, tables and much more. Also you can use simple navbar for site navigation and mobile sidebar navigation with hamburger menu and slide in effect in pure CSS.",
   "main": "index.html",
   "scripts": {
