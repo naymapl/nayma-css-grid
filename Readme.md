@@ -1,37 +1,39 @@
 ![Nayma Logo](https://nayma.pl/img/logo-naymapl-color-web.svg)
 
-# Prosty, lekki i responsywny framework CSS od Nayma.pl
+# Simple, light and responsive CSS framework from Nayma.pl
 
-Nayma CSS Grid to prosty, lekki (*3kb gzip*), responsywny framework/boilerplate CSS, dzięki któremu stworzysz prosty layout strony oparty o siatkę 12 kolumn (wspierających flexbox),
-nagłówki, listy, formularze, tabele oraz przyciski. Dodaliśmy również możliwość dodania górnej belki nawigacyjnej wraz z wysuwanym menu bocznym w czystym kodzie CSS.
+Nayma CSS Grid is a simple, lightweight (* 3kb gzip *), responsive CSS framework/boilerplate that will create a simple 12 columns layout grid (flexbox support), headlines, lists, forms, tables, buttons and much more. Also you will get the ability to add a top navigation bar with a mobile slider side menu in pure CSS.
 
-#### DEMO w serwisie CodePen.io: https://codepen.io/Naymapl/pen/rwpXEg
+#### DEMO on CodePen.io: https://codepen.io/Naymapl/pen/rwpXEg
+#### DEMO on CodePen.io Polska Wersja: https://codepen.io/Naymapl/pen/oeEmqM
+
+#### Polska Dokumentacja: https://github.com/naymaeu/nayma-css-grid/blob/master/Readme-PL.md
 
 #### GitHub: https://github.com/naymaeu/nayma-css-grid
 #### GitLab: https://gitlab.com/naymapl/nayma-css-grid
 
-# Dlaczego Nayma CSS grid ?
+# Why Nayma CSS grid ?
 
-Nayma CSS Grid posiada wszystkie potrzebne elementy takie jak siatka kolumn, nagłówki, przyciski, formularze, tabele, menu i wiele innych. Zajmuje tylko (3kb gzip). Jest w pełni responsywny i posiada specjalne menu mobilne w czystym CSS. Oparte jest na nowoczestnych jednostkach takich jak `REM`, `VH` czy `VW`.
+Nayma CSS Grid has all the necessary elements such as grid columns, headers, buttons, forms, tables, menus and more. It only takes (3kb gzip). It is fully responsive and has a special mobile menu in pure CSS. It is based on the newest units such as `REM`,` VH` or `VW`.
 
-# Instalacja
+# Installation
 
-Aby zainstalować i pobrać pakiem mozna pobrać paczkę zip z tego repozytorium lub skorzystać z mozliwości instalacji poprzez NPM.
+You can download the zip package from this repository or use the NPM installation option to install and download the package.
 
 ***NPM***
 ```
 npm install nayma-css-grid
 ```
 
-Następnie wystarczy w sekcji `head` strony podpiąć plik `nayma-css-grid.min.css`.
+Then, in the `head` section of the page, attach the` nayma-css-grid.min.css` file.
 
 ```html
     <link rel="stylesheet" href="nayma-css-grid.min.css">
 ```
 
-# Siatka kolumn i przykłady
+# Grid columns and examples
 
-Siatkę kolumn tworzymy w oparciu o wiersze. Same kolumny są oparte o flexbox więc wypełniają wiersz automatycznie. Dla przykładu kod, w którym w wierszu `row` wstawiamy jedną kolumnę o klasie `auto`, dzięki czemu zostanie ona rozciągnieta na 100% wiersza:
+We create a grid of columns based on rows. Same columns are based on flexbox so they fill a row automatically. For example, the code that inserts one column with the `column` class in the `row` div, so that it is stretched to 100% of the row:
 
 ```html
 <div class="row">
@@ -39,7 +41,7 @@ Siatkę kolumn tworzymy w oparciu o wiersze. Same kolumny są oparte o flexbox w
 </div>
 ```
 
-Używając klasy `column` dodajemy więc kolumny korzystające z flexbox. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:
+By using the `column` class, we add columns that use flexbox. However you can add assign a specific column width from 1 to 12. We use very simple to learn syntax for column layout. Here are all the classes we can use to create a grid of columns:
 
 * column
 * column is-1
@@ -58,7 +60,7 @@ Używając klasy `column` dodajemy więc kolumny korzystające z flexbox. Możem
 * column is-two-third
 * column is-half
 
-Dla przykładu układ kolumn 1/3 oraz 2/3 wygladać będzie następująco:
+For example, the layout of columns 1/3 and 2/3 will look like this:
 
 ```html
 <div class="row">
@@ -67,7 +69,7 @@ Dla przykładu układ kolumn 1/3 oraz 2/3 wygladać będzie następująco:
 </div>
 ```
 
-Możemy również łączyć kolumny oparte o flexbox z tymi które mają zdefiniowaną stałą szerokość:
+We can also combine columns based on the flexbox with those that have a fixed width:
 
 ```html
 <div class="row">
@@ -78,13 +80,13 @@ Możemy również łączyć kolumny oparte o flexbox z tymi które mają zdefini
 </div>
 ```
 
-Mamy nadzieję, że wszystko jest proste i zrozumiałe dla każdego.
+We hope everything is simple and understandable for everyone.
 
-# Sekcje
+# Sections
 
-Możemy korzystać z sekcji `<section>`, która posiada tło białe lub `<section class="lightgrey">` o jasnoszarym tle. Pamietajmy, że sekcje mają szerokość 100% i jesli chcemy aby zawartość sekcji nie wypełniała całej szerokości strony umieścić ją w `<div class="container">`. Kontenery mają zdefiniowaną stałą szerokośc maksymalną na 1260px. MOżna ją jednak wyedytować w 1 miesjcu i powiększyć parametr `max-width` na np. 1380px.
+You can use the `<section>` which has a white background or `<section class ="lightgrey">` with a light gray background. All section have 100% width.
 
-Przykładowy kod sekcji:
+Sample section code:
 
 ```html
 <section>
@@ -96,8 +98,8 @@ Przykładowy kod sekcji:
     </div>
 </section>
 ```
-Od wersji 0.5.0 dostępna jest także sekcja `hero` o tle niebieskim. Kolor oczywiście możemy edytować w pliku css.
-Przykładowy kod html dla sekcji `hero`:
+From version 0.5.0 there is also a `hero` section with a blue gradient background. Of course you can edit color in the css file.
+Sample html code for the `hero` section:
 
 ```html
 <section class="hero">
@@ -105,42 +107,42 @@ Przykładowy kod html dla sekcji `hero`:
         <div class="row">
             <div class="column">
                 <div class="title">Nayma CSS Grid</div>
-                <div class="subtitle">Prosty, lekki i responsywny framework CSS od Nayma.pl</div>
-                <a class="button is-inverted" href="#">Zobacz więcej</a>
+                <div class="subtitle">Simple, light and responsive CSS framework from Nayma.pl</div>
+                <a class="button is-inverted" href="#">Download</a>
             </div>
         </div>
     </div>
 </section>
 ```
 
-# Nagłówki
+# Headers
 
-Wszystkie nagłówki od `<h1>` do `<h6>` zostały ostylowane i nie są wymagane żadne dodatkowe działania.
+All headings from `<h1>` to `<h6>` have been clipped and no additional action is required.
 
-# Listy
+# Lists
 
-Nayma CSS Grid korzysta z 2 standardowych typów list `ul` oraz `ol`. Elementy te zostały ostylowane i nie są wymagane żadne dodatkowe działania
+Nayma CSS Grid uses two standard types `ul` and` ol`. These items have been stowed and no additional action is required
 
-Przykładowe listy:
+Sample lists:
 
 ```html
 <ol>
-    <li>Podstawowe style dla list numerowanych</li>
+    <li>Basic styles for numbered lists</li>
     <li>
-        Można korzystać z zagnieżdżania list
+        You can use nested lists
         <ul>
-            <li>Pierwszy element nienumerowany</li>
-            <li>Drugi element nienumerowany</li>
+            <li>The first non-numbered item</li>
+            <li>Second non-numbered item</li>
         </ul>
     </li>
-    <li>Ostatni element numerowany listy</li>
+    <li>Last numbered list item</li>
 </ol>
 ```
-# Przyciski
+# Buttons
 
-W Nayma CSS grid możemy korzystać z czterech różnych typów przycisków. Są to zwykłe odnośniki `<a>` z przypisaną klasą `.button`, elementy `<button>` oraz `<input>`. Wszystkie te elementy mogą być przyciskiem bez wypełnienia oraz z wypełnieniem.
+In the Nayma CSS grid we can use four different types of buttons. These are regular `<a>` with assigned `.button`, `<button>` and `<input>` elements. All these elements can be a button without filling and filling background.
 
-Przykład przycisków bez wypełnienia:
+Example of buttons without fill:
 
 ```html
 <a class="button" href="#">Anchor button</a>
@@ -148,7 +150,7 @@ Przykład przycisków bez wypełnienia:
 <input type="submit" value="submit input">
 <input type="button" value="button input">
 ```
-Przykład przycisków z wypełnieniem. Wystarczy użyć klasy `.button-primary`:
+Example of filled buttons. Just use the `.button-primary` class:
 
 ```html
 <a class="button button-primary" href="#">Anchor button</a>
@@ -156,11 +158,11 @@ Przykład przycisków z wypełnieniem. Wystarczy użyć klasy `.button-primary`:
 <input class="button-primary" type="submit" value="submit input">
 <input class="button-primary" type="button" value="button input">
 ```
-Dodatkowo mamy do dyspozycji klasy `.is-inverted` dla guzików, które umieszczamy na ciemnym tle. Dla przycisków, które chcemy umieścić w pasku nawigacji stosujemy klasę `.is-button-nav`.
+n addition, we have the `.is-inverted` class for buttons that we put on a dark background. For the buttons that we want to place in the navigation bar, we use the `.is-button-nav` class.
 
-# Formularze
+# Forms
 
-Każdy formularz `<form>` został ostylowany i możemy korzystać z takich elementów jak:
+Each form `<form>` has been stapled and we can use elements like:
 
 * label
 * input
@@ -168,7 +170,7 @@ Każdy formularz `<form>` został ostylowany i możemy korzystać z takich eleme
 * textarea
 * checkbox
 
-Przykładowy formularz zawierający większość ostylowanych opcji:
+Example form:
 
 ```html
 <form>
@@ -198,109 +200,112 @@ Przykładowy formularz zawierający większość ostylowanych opcji:
 </form>
 ```
 
-# Nawigacja
+# Main Navigation
 
-Nayma CSS Grid pozwala nam na dodanie do strony sekcji `<header>` z menu nawigacyjnym. Nawigację możemy dodać korzystając z znaczników `<nav>`. Możemy dodatkowo podzielić naszą belkę górną na 2 kolumny dzięki klasą `<nav class="left-nav">` oraz `<nav class="right-nav">`. Przykładowe menu z logo po lewej stronie oraz prostym menu po stronie prawej:
-
-```html
-<header>
-    <div class="container">
-        <div class="row">
-            <nav class="left-nav">
-                <div class="logo">
-                    <a href="#">Logo</a>
-                </div>
-            </nav>
-            <nav class="right-nav">
-                <a class="nav-link" href="#">Start</a>
-                <a class="nav-link" href="#">Dokumentacja</a>
-                <a class="nav-link" href="#">GitLab</a>
-                <a class="button button-primary is-button-nav" href="#">Download</a>
-            </nav>
-        </div>
-    </div>
-</header>
-```
-
-# Nawigacja mobilna
-
-Nawigację mobilną w czystym CSS dodajemy na samej górze naszej strony zaraz po zakończeniu sekcji `</head>`. Gotowy kod znajdziemy poniżej. Pamietajmy że musimy wyedytować nasze menu zarówno w sekcji nawigacji głównej jak i w naszym pasku bocznym. Pozwala nam to jednak na korzystanie z innych odnośników w wersji mobilnej i innego układu menu.
+Nayma CSS Grid allows us to add a `<header>` section to the navigation page. Navigation can be added using the `<nav>` tags. We can further divide our top beam into 2 columns with the `<nav class="left-nav">` and `<nav class="right-nav">`. Sample logo menu on the left and simple menu on the right:
 
 ```html
-<input type="checkbox" id="hamburger" />
-    <label class="menuicon" for="hamburger">
-        <span></span>
-    </label>
-    <div class="menu">
-        <ul>
-            <li>
-                <a href="#">Start</a>
-            </li>
-            <li>
-                <a href="#">Dokumentacja</a>
-            </li>
-            <li>
-                <a href="#">GitLab</a>
-            </li>
-        </ul>
-    </div>
-```
-
-# Stopka
-
-Do stworzenia stopki używamy znacznika `<footer>` wewnątrz którego umieszczamy paragraf z tekstem naszej stopki. Przykładowy kod poniżej:
-
-```html
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="auto column">
-                <p>
-                    <strong>Nayma CSS Grid</strong> by <a href="https://nayma.pl" target="_blank">Nayma.pl</a>. The source code is licensed
-                    <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
-                </p>
+<!-- Main navigation section  -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!-- Left nav with logo  -->
+                <nav class="left-nav">
+                    <div class="logo">
+                        <a href="">nayma-css-grid</a>
+                    </div>
+                </nav>
+                <!-- Right nav with menu  -->
+                <nav class="right-nav">
+                    <a class="nav-link" href="">Start</a>
+                    <a class="nav-link" href="" target="_blank">Doc</a>
+                    <a class="nav-link" href="" target="_blank">GitHub</a>
+                    <a class="button button-primary is-button-nav" href="">Download</a>
+                </nav>
             </div>
         </div>
-    </div>
-</footer>
+    </header>
+    <!-- Move page 4.4rem down -->
+    <div class="nav-fix"></div>
+<!-- End Main navigation section  -->
 ```
 
-# Linie poziome
+# Mobile Navigation
 
-Linie poziomą `<hr>` możemy używać bez żadnych dodatkowych klas.
+Mobile navigation in pure CSS is added at the very top of our page just after the end of the `</ head>` section. Let's remember that you have to edit your menu both in the main navigation section and also in sidebar. This, however, allows you to use other links andelements in the mobile version and other in main nav menu. Sample code for mobile navigation:
 
-# Tabele
+```html
+<!-- Mobile navigation section -->
+    <input type="checkbox" id="hamburger">
+    <label class="menuicon" for="hamburger"><span></span></label>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Doc</a></li>
+            <li><a href="https://github.com/naymaeu/nayma-css-grid" target="_blank">GitHub</a></li>
+            <a class="button is-inverted" href="https://github.com/naymaeu/nayma-css-grid/archive/master.zip">Download</a>
+        </ul>
+    </div>
+<!-- End mobile navigation section -->
+```
 
-Dodając proste tabele na naszą stronę możemy korzystać ze znaczników takich jak `table`, `tr` oraz `td`. Wszystkie one posiadają podstawowe stylowanie.
+# Footer
 
-Przykładowy kod HTML prostej tabeli:
+To create a footer we use the `<footer>` tag inside you will places the paragraph with the text of our footer. Example code below:
+
+```html
+<!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <p>
+                        <strong>Nayma CSS Grid</strong> by <a href="https://nayma.pl" target="_blank">Nayma.pl</a>. The source code is licensed
+                        <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- End Footer Section -->
+```
+
+# Horizontal line
+
+Horizontal lines `<hr>` can be used without any additional classes.
+
+# Tables
+
+By adding simple tables to our site we can use tags like `table`, `tr` and `td`. They all have basic styling.
+
+Sample simple HTML table code:
 
 ```html
 <table>
     <tr>
-        <th>Kolumna 1</th>
-        <th>Kolumna 2</th>
-        <th>Kolumna 3</th>
-        <th>Kolumna 4</th>
+        <th>1 column</th>
+        <th>2 column</th>
+        <th>3 column</th>
+        <th>4 column</th>
     </tr>
     <tr>
-        <td>Żaba</td>
-        <td>Jaszczurka</td>
-        <td>Kot</td>
-        <td>Kameleon</td>
+        <td>Frog</td>
+        <td>Blizzard</td>
+        <td>Cat</td>
+        <td>Cameleon</td>
     </tr>
     <tr>
-        <td>Morświn</td>
-        <td>Rybitwa</td>
-        <td>Szczupak</td>
-        <td>Okoń</td>
+        <td>Salmon</td>
+        <td>Sea Bass</td>
+        <td>Hearing</td>
+        <td>Magic carp</td>
     </tr>
 </table>
 ```
 
-# Dodatkowe klasy
+# Additional classes
 
-Dodatkowe klasy pozwalające dodać paddingi lub marginesy od góry i z dołu oraz klasa kasująca wszystkie marginesy i paddingi:
+Additional classes that allow you to add padding or margins from the top and bottom, and a class that erases all margins and padding:
 
 * .padding-top-20
 * .padding-top-30
@@ -329,9 +334,9 @@ Dodatkowe klasy pozwalające dodać paddingi lub marginesy od góry i z dołu or
 * .is-pull-left
 * .is-hidden-mobile
 
-# Dziękujemy
+# Thanks
 
-Mamy nadzieję, że ta prosta dokumentacja pozwoli wam zrozumieć, jak korzystać z wszystkich elementów jak i siatki kolumn. Liczymy, że korzystanie z tego prostego framework/boilerplate będzie łatwe i przyjemne i przyda się podczas budowania prostych stron. W razie pytań zapraszamy do kontaktu z nami.
+We hope that this simple documentation will allow you to understand how to use all the elements as well as the grid of columns. We hope that using this simple framework/boilerplate will be easy, fun and useful when building simple pages. If you have any questions, please feel free to contact us.
 
-Zobacz również naszą stronę: [Nayma.pl](https://nayma.pl)
-Zobacz nasz blog: [Blog Nayma.pl](https://blog.nayma.pl)
+See also our site: [Nayma.pl] (https://nayma.pl)
+See our blog: [Blog Nayma.pl] (https://blog.nayma.pl)

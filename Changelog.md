@@ -1,82 +1,93 @@
-# Nayma CSS Grid Lista Zmian
+# Nayma CSS Grid Changelog
+
+## 0.6.0
+
+### Changes and news:
+
+* CSS files has been moved to the `dist` directory
+* HTML files has been moved to the `examples` directory
+* Added English sample file (Polish now has the name examples/index-pl.html)
+* Added English Changelog.md (Polish now has the name Changelog-PL.md)
+* Added English Readme.md (Polish now has the name Readme-PL.md)
+* Minor CSS code corrections and sample files
 
 ## 0.5.1
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Poprawki do wersji zminifikowanej.
+* Fixes for the minimized version.
 
 ## 0.5.0
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Całkowicie przepisany syntax dla siatki kolumn. Jest teraz dużo prościej.
-* Usprawnione menu i nawigacja górna.
-* Dodano możliwość dodawania przycisków do menu
-* Dodano sekcję hero
-* Dodano przycisk .is-inverted
-* Usunięty zbędny kod css
-* Wiele innych poprawek kodu i usprawnień
+* Fully rewritten syntax for grid columns. It is much simpler now.
+* Streamlined navigation and navigation.
+* Added the ability to add buttons to the menu
+* Added hero section
+* Added .is-inverted button
+* Removed superfluous css code
+* Many other code corrections and improvements
 
 ## 0.4.4
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Dokończona dokumentacja
-* Dokończony plik index.html
-* Usunięty zbędny kod css
+* Completed documentation
+* Completed index.html file
+* Removed superfluous css code
 
 ## 0.4.2
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Poprawiony NPM install
-* Usunięty zbędny kod css
+* Fixed NPM install
+* Removed superfluous css code
 
 ## 0.4.1
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Nowa klasa pomocnicza .text-centered oraz .mobile-hidden
-* Sekcja stopka (footer)
-* Usprawnienia kodu CSS
+* New helper class .text-centered and .mobile-hidden
+* Footer section
+* CSS code improvements
 
 ## 0.4.0
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Pełna dokumentacja i opis wszystkich możliwości w pliku Readme.md
-* Zupełnie nowy plik DEMO index.html
-* Dodano podstawowe style dla tabel
-* Poprawiony kod dla nawigacji
-* Usunieto niepotrzebny kod
-* Optymalizacja niektórych fragmentów kodu
-* Sporo drobnych poprawek i usprawnień
+* Full documentation and description of all the possibilities in the Readme.md file
+* Completely new DEMO index.html file
+* Added basic styles for tables
+* Fixed code for navigation
+* Removed unnecessary code
+* Optimizing some snippets of code
+* A lot of minor patches and improvements
 
 ## 0.3.0
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Dodanie pakietu NPM
-* Zminifikowany plik nayma-css-grid.min.css
+* Added NPM package
+* Minimized file nayma-css-grid.min.css
 
 ## 0.2.9
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Dodanie pliku Readme.md
-* Dodanie pliku Changelog.md
-* Drobne usprawnienia kodu
+* Added Readme.md file
+* Added Changelog.md file
+* Minor code improvements
 
 ## 0.2.0
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Zmiany i poprawki kodu CSS
-* Dodanie pomocniczych klas dla paddingów i marginesów
+* Changes and fixes of CSS code
+* Added auxiliary classes for padding and margins
 
 ## 0.1.0
 
-### Zmiany i nowości:
+### Changes and news:
 
-* Pierwsze wydanie
+* First edition

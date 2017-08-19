@@ -3,11 +3,11 @@
     <title>Nayma CSS Grid</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Mobile Specific Metas -->
+<!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <link rel="stylesheet" href="nayma-css-grid.css">
-    <!-- Dodatkowe style tylko dla tej strony -->
+<!-- CSS -->
+    <link rel="stylesheet" href="../dist/nayma-css-grid.css">
+<!-- Extra styles for this example page -->
     <style>
     .example-grid .column,
     .example-grid .columns {
@@ -26,41 +26,33 @@
 </head>
 
 <body>
-    <!-- Sekcja dla nawigacji moilnej. Proszę zduplikować tutaj menu -->
-    <input type="checkbox" id="hamburger" />
-    <label class="menuicon" for="hamburger">
-        <span></span>
-    </label>
+<!-- Mobile navigation section -->
+    <input type="checkbox" id="hamburger">
+    <label class="menuicon" for="hamburger"><span></span></label>
     <div class="menu">
         <ul>
-            <li>
-                <a href="index.html">Start</a>
-            </li>
-            <li>
-                <a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
-            </li>
-            <li>
-                <a href="https://github.com/naymaeu/nayma-css-grid" target="_blank">GitHub</a>
-            </li>
-                                        <a class="button is-inverted" href="https://github.com/naymaeu/nayma-css-grid/archive/master.zip">Download</a>
-
+            <li><a href="index.html">Start</a></li>
+            <li><a href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Doc</a></li>
+            <li><a href="https://github.com/naymaeu/nayma-css-grid" target="_blank">GitHub</a></li>
+            <a class="button is-inverted" href="https://github.com/naymaeu/nayma-css-grid/archive/master.zip">Download</a>
         </ul>
     </div>
-    <!-- Koniec menu mobilnego -->
-    <!-- Sekcja Header z nawigacją  -->
+<!-- End mobile navigation section -->
+
+<!-- Main navigation section  -->
     <header>
         <div class="container">
             <div class="row">
-                <!-- Nawigacja lewa z logo  -->
+                <!-- Left nav with logo  -->
                 <nav class="left-nav">
                     <div class="logo">
                         <a href="">nayma-css-grid</a>
                     </div>
                 </nav>
-                <!-- Nawigacja prawa z menu  -->
+                <!-- Right nav with menu  -->
                 <nav class="right-nav">
                             <a class="nav-link" href="index.html">Start</a>
-                            <a class="nav-link" href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Dokumentacja</a>
+                            <a class="nav-link" href="https://gitlab.com/naymapl/nayma-css-grid" target="_blank">Doc</a>
                             <a class="nav-link" href="https://github.com/naymaeu/nayma-css-grid" target="_blank">GitHub</a>
                             <a class="button button-primary is-button-nav" href="https://github.com/naymaeu/nayma-css-grid/archive/master.zip">Download</a>
                 </nav>
@@ -69,39 +61,47 @@
     </header>
     <!-- Move page 4.4rem down -->
     <div class="nav-fix"></div>
-    <!-- Sekcja hero -->
+<!-- End Main navigation section  -->
+
+<!-- Hero section -->
     <section class="hero">
         <div class="container">
             <div class="row">
                 <div class="column no-padding">
                     <div class="title">Nayma CSS Grid</div>
-                    <div class="subtitle">Prosty, lekki i responsywny framework CSS od Nayma.pl</div>
-                    <a class="button is-inverted" href="#">Zobacz więcej</a>
+                    <div class="subtitle">Simple, light and responsive css boilerplate from Nayma.pl</div>
+                    <a class="button is-inverted" href="https://github.com/naymaeu/nayma-css-grid/archive/master.zip">Download</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Sekcja informacyjna -->
+<!-- End hero section -->
+
+<!-- Info Section -->
     <section class="lightgrey">
         <div class="container">
             <div class="row">
                 <div class="column no-padding">
-                    <h4>Czym jest Nayma CSS Grid ?</h4>
-                    <p>Nayma CSS Grid to prosty, lekki (3kb gzip), responsywny framework CSS dzięki któremu stworzysz prosty układ 12 column (opartych o flexbox), nagłówki, listy, formularze oraz przyciski. Dodaliśmy również możliwośc dodania nawigacji górnej wraz z wysówanym menu bocznym w czystym kodzie CSS.</p>
+                    <h4>What is Nayma CSS Grid?</h4>
+                    <hr>
+                    <p>Nayma CSS Grid is dead simple, light (3kb gziped), responsive CSS framework/boilerplate whith twelve columns layout (whith use flexbox) to build simple websites. You will get styles for elements like headers, lists, forms buttons, tables and much more. Also you can use simple navbar for site navigation and mobile sidebar navigation with hamburger menu and slide in effect in pure CSS</p>
                 </div>
                 <div class="column no-padding">
-                    <h4>Dlaczego Nayma CSS grid ?</h4>
-                    <p>Nayma CSS Grid posiada wszystkie potrzebne elementy takie jak siatka kolumn, nagłówki, przyciski, formularze, tabele, menu i wiele innych. Zajmuje tylko (<strong>3kb gzip</strong>). Jest w pełni responsywny i posiada specjalne menu mobilne w czystym CSS. Oparte jest na nowoczestnych jednostkach takich jak <strong>REM</strong>, <strong>VH</strong> czy <strong>VW</strong>.</p>
+                    <h4>Why Nayma CSS grid?</h4>
+                    <hr>
+                    <p>Nayma CSS Grid has very simple to learn syntax for build grid in CSS. Also have styled a lot of basic elements and is very light (<strong>3kb gziped</strong>). This bilerplate/framework is 100% responsive and have pure css nav elements for desktop and mobile. To build this framework we use <strong>REM</strong>, <strong>VH</strong> czy <strong>VW</strong>.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Sekcja z siatką kolumn -->
+<!-- End info section -->
+
+<!-- Grid section -->
     <section>
         <div class="container" id="grid">
-            <h4>Siatka kolumn</h4>
+            <h4>Grid syntax</h4>
             <hr>
-            <p>Siatka Nayma CSS Grid korzysta z układu 12 kolumn, które pozycjonowane są za pomocą flexbox lub przy pomocy dodatkowych klas css. Szerokość kontenera ma maksymalnie <strong>1260px</strong>, jednak można ją zmienić edytując jedną wartość w pliku css. Siatkę kolumn tworzymy w oparciu o wiersze o klasie <strong>.row</strong>. Kolumny dodajemy w formie div o klasie <strong>column</strong>. Kolumny wypełnią wiersz automatycznie dopasowując szerokość. Możemy jednak przypisać konkretną szerokość kolumnie od 1 do 12. Skorzystaliśmy z anglojęzycznych nazw klas by nasz kod był uniwersalny i każdy rozumiał terminologie. Poniżej przedstawiamy wszystkie klasy, których możemy używać do stworzenia siatki kolumn:</p>
+            <p>Nayma CSS Grid use 12 columns layout. You can use 100% width and cointener with max-width of <strong>1260px</strong>. If you need widther container you can edit one line in css file. To start build your layout use firts div with class <strong>.row</strong>. Inside row you can add many columns you want and they use flexbox to fill row. You just need to use css class <strong>column</strong>. If you want to use specyfic width of column you can use this few simple to learn css class:</p>
             <div class="row">
                 <div class="column">
                     <ul>
@@ -132,7 +132,7 @@
                     </ul>
                 </div>
             </div>
-            <p>Poniżej przykład naszej siatki:</p>
+            <p>Examples of nayma-css-grid:</p>
             <div class="example-grid docs-example">
                 <div class="row">
                     <div class="column">auto</div>
@@ -201,165 +201,173 @@
             </div>
         </div>
     </section>
-    <!-- Sekcja z nagłówkami i listami -->
+<!-- End Grid Section -->
+
+<!-- Headers and Lists Section -->
     <section class="lightgrey">
         <div class="container" id="typography">
-            <h4>Nagłówki i listy</h4>
+            <h4>Headers and lists</h4>
             <hr>
-            <p>Wszystkie nagłówki od <strong>h1</strong> do <strong>h6</strong> zostały ostylowane i nie są wymagane żadne dodatkowe działania. Nayma CSS Grid korzysta z 2 standardowych typów list <strong>ul</strong> oraz <strong>ol</strong>. Elementy te zostały ostylowane i nie są wymagane żadne dodatkowe działania. Przykładowe nagłówki i listy poniżej:</p>
+            <p>All headlines from <strong>h1</strong> to <strong>h6</strong> has been styled and no further action is required. Nayma CSS Grid uses 2 standard types of lists: <strong>li</strong> and <strong>ol</strong>. These items have been styled and no additional action is required. Sample headlines and lists below:</p>
             <div>
                 <div class="row">
                     <div class="column">
-                        <h1>Nagłówek
+                        <h1>Header
                             <code>&lt;h1&gt;</code>
                         </h1>
-                        <h2>Nagłówek
+                        <h2>Header
                             <code>&lt;h2&gt;</code>
                         </h2>
-                        <h3>Nagłówek
+                        <h3>Header
                             <code>&lt;h3&gt;</code>
                         </h3>
-                        <h4>Nagłówek
+                        <h4>Header
                             <code>&lt;h4&gt;</code>
                         </h4>
-                        <h5>Nagłówek
+                        <h5>Header
                             <code>&lt;h5&gt;</code>
                         </h5>
-                        <h6>Nagłówek
+                        <h6>Header
                             <code>&lt;h6&gt;</code>
                         </h6>
                     </div>
                     <div class="column">
                         <ol>
-                            <li>Podstawowe style dla list numerowanych</li>
+                            <li>Basic styles for numbered lists</li>
                             <li>
-                                Można korzystać z zagnieżdżania list
+                                You can use nested lists
                                 <ul>
-                                    <li>Pierwszy element nienumerowany</li>
-                                    <li>Drugi element nienumerowany</li>
+                                    <li>The first nested non-numbered item</li>
+                                    <li>Second nested non-numbered item</li>
                                 </ul>
                             </li>
-                            <li>Ostatni element numerowany listy</li>
+                            <li>Last numbered list item</li>
                         </ol>
                         <hr>
                         <ul>
-                            <li>Nienumerowane listy też mają podstawowe stylowanie</li>
+                            <li>Standard not-numbered lists also have basic styling</li>
                             <li>
-                                Można korzystać z zagnieżdżania list
+                                You can use nested lists
                                 <ul>
-                                    <li>Pierwszy element zagnieżdżony listy</li>
-                                    <li>Drugi element zagnieżdżony listy</li>
+                                    <li>The first nested list item</li>
+                                    <li>Second nested list</li>
                                 </ul>
                             </li>
-                            <li>Ostatni element listy</li>
+                            <li>Last list item</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Sekcja z przyciskami -->
+<!-- End Headers and Lists Section -->
+
+<!-- Buttons Section -->
     <section>
         <div class="container" id="buttons">
-            <h4>Przyciski</h4>
+            <h4>Buttons</h4>
             <hr>
-            <p>W Nayma CSS grid możemy korzystać z czterech różnych typów przycisków. Są to zwykłe odnośniki <code>&lt;a&gt;</code> z przypisaną klasą <strong>.button</strong>, elementy <code>&lt;button&gt;</code> oraz <code>&lt;input&gt;</code>. Wszystkie te elementy mogą być przyciskiem bez wypełnienia oraz z wypełnieniem.</p>
+            <p>In the Nayma CSS grid we can use four different types of buttons. These are regular <code>&lt;a&gt;</code> with assigned <strong>.button</strong>, <code>&lt;button&gt;</code> and <code>&lt;input&gt;</code> elements. All these elements can be a button without filling and filling background.</p>
             <div>
                 <div class="is-text-centered">
-                    <a class="button" href="#">Przycisk standardowy</a>
-                    <button>Przycisk button</button>
+                    <a class="button" href="#">Anchor button</a>
+                    <button>Button element</button>
                     <input type="submit" value="submit input">
                     <input type="button" value="button input">
                 </div>
                 <div class="is-text-centered">
-                    <a class="button button-primary" href="#">Przycisk standardowy</a>
-                    <button class="button-primary">Przycisk Button</button>
+                    <a class="button button-primary" href="#">Anchor button</a>
+                    <button class="button-primary">Button element</button>
                     <input class="button-primary" type="submit" value="submit input">
                     <input class="button-primary" type="button" value="button input">
                 </div>
             </div>
         </div>
     </section>
-    <!-- Sekcja z formularzem kontaktowym -->
+<!-- End Buttons Section -->
+
+<!-- Contact Form Section -->
     <section class="lightgrey">
         <div class="container">
-            <h4>Formularz kontaktowy</h4>
+            <h4>Contact form</h4>
             <hr>
-            <p>Każdy formularz <code>&lt;form&gt;</code> został ostylowany i możemy korzystać z takich elementów jak: <i>label</i>, <i>input</i>, <i>select</i>, <i>textarea</i> czy <i>checkbox</i>. Przykładowy formularz zawierający większość ostylowanych opcji:</p>
+            <p>Every form <code>&lt;form&gt;</code> has a styling for elements like: <i>label</i>, <i>input</i>, <i>select</i>, <i>textarea</i> czy <i>checkbox</i>. Sample contact form with few extra options:</p>
             <div class="row">
                 <div class="column is-1 is-hidden-mobile"></div>
                 <div class="column is-10">
                                 <form>
                 <div class="row">
                     <div class="column no-padding">
-                        <label for="exampleEmailInput">Twój email</label>
+                        <label for="exampleEmailInput">Your Email</label>
                         <input class="is-fullwidth" type="email" placeholder="test@nayma.pl" id="exampleEmailInput">
                     </div>
                     <div class="column no-padding">
-                        <label for="selectList">Wybierz temat kontaktu</label>
+                        <label for="selectList">Select contact topic</label>
                         <span class="select">
                             <select class="is-fullwidth" id="selectList">
-                                <option value="Option 1">Wycena projektu</option>
-                                <option value="Option 2">Potrzebny dodatkowy kontakt</option>
-                                <option value="Option 3">Mam inne pytania</option>
+                                <option value="Option 1">Price</option>
+                                <option value="Option 2">Extra information</option>
+                                <option value="Option 3">Others questions</option>
                             </select>
                         </span>
                     </div>
                 </div>
-                <label for="exampleMessage">Wiadomość</label>
-                <textarea class="is-fullwidth" placeholder="Wpisz treść wiadomości..." id="exampleMessage"></textarea>
+                <label for="exampleMessage">Message</label>
+                <textarea class="is-fullwidth" placeholder="Type your message..." id="exampleMessage"></textarea>
                 <label class="is-pull-left">
                     <input type="checkbox">
-                    <span class="">Wyślij kopię do mnie</span>
+                    <span class="">Send copy to me</span>
                 </label>
-                <input class="button-primary is-pull-right" type="submit" value="Wyślij">
+                <input class="button-primary is-pull-right" type="submit" value="Send">
             </form>
                 </div>
                 <div class="column is-1 is-hidden-mobile"></div>
             </div>
         </div>
     </section>
-    <!-- Sekcja z tabelami -->
+<!-- End Contact Form Section -->
+
+<!-- Tables Section -->
     <section>
         <div class="container">
-            <h4>Tabele</h4>
+            <h4>Tables</h4>
             <hr>
-            <p>Dodając proste tabele na naszą stronę możemy korzystać ze znaczników takich jak <i>table</i>, <i>tr</i> oraz <i>td</i>. Wszystkie one posiadają podstawowe stylowanie.
-                <br>
-                <br>Przykładowa tabela:</p>
-            <div class="row no-padding">
+            <p>By adding simple tables to our site we can use tags like <i>table</i>, <i>tr</i> and <i>td</i>. They all have basic styling.
+                 <br>
+                 <br>Example table:</p>
+<div class="row no-padding">
                 <div class="column no-padding">
                     <div style="overflow-x:auto;">
                         <table class="is-fullwidth">
                             <tr>
-                                <th>Kolumna 1</th>
-                                <th>Kolumna 2</th>
-                                <th>Kolumna 3</th>
-                                <th>Kolumna 4</th>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                                <th>Column 3</th>
+                                <th>Column 4</th>
                             </tr>
                             <tr>
-                                <td>Żaba</td>
-                                <td>Jaszczurka</td>
-                                <td>Kot</td>
-                                <td>Kameleon</td>
+                                <td>Frog</td>
+                                <td>Blizzard</td>
+                                <td>Cat</td>
+                                <td>Cameleon</td>
                             </tr>
                             <tr>
-                                <td>Morświn</td>
-                                <td>Rybitwa</td>
-                                <td>Szczupak</td>
-                                <td>Okoń</td>
+                                <td>Magic Carp</td>
+                                <td>Sea Bass</td>
+                                <td>Salmon</td>
+                                <td>Hearing</td>
                             </tr>
                             <tr>
-                                <td>Łoś</td>
-                                <td>Sarna</td>
-                                <td>Jeleń</td>
-                                <td>Żubr</td>
+                                <td>Elephant</td>
+                                <td>Giraffe</td>
+                                <td>Hippo</td>
+                                <td>Pikachu</td>
                             </tr>
                             <tr>
-                                <td>Dzik</td>
-                                <td>Jeż</td>
-                                <td>Ryś</td>
-                                <td>Lis</td>
+                                <td>Fox</td>
+                                <td>Dog</td>
+                                <td>Ruster</td>
+                                <td>Cow</td>
                             </tr>
                         </table>
                     </div>
@@ -367,7 +375,9 @@
             </div>
         </div>
     </section>
-    <!-- Sekcja Footer -->
+<!-- End Tables Section -->
+
+<!-- Footer Section -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -380,5 +390,7 @@
             </div>
         </div>
     </footer>
-    <!-- Koniec strony. Poniżej dodawaj skrypty JS -->
+<!-- End Footer Section -->
+
+<!-- Add yours JS scripts below -->
 </body>
