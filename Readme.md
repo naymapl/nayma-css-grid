@@ -338,5 +338,5 @@ Additional classes that allow you to add padding or margins from the top and bot
 
 We hope that this simple documentation will allow you to understand how to use all the elements as well as the grid of columns. We hope that using this simple framework/boilerplate will be easy, fun and useful when building simple pages. If you have any questions, please feel free to contact us.
 
-See also our site: [Nayma.pl] (https://nayma.pl)
-See our blog: [Blog Nayma.pl] (https://blog.nayma.pl)
+See also our site: [Nayma.pl](https://nayma.pl)
+See our blog: [Blog Nayma.pl](https://blog.nayma.pl)
