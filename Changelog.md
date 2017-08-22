@@ -1,5 +1,13 @@
 # Nayma CSS Grid Changelog
 
+## 0.6.6
+
+### Changes and news:
+
+* CSS code improvment
+* Small changes in examples files
+
+
 ## 0.6.0
 
 ### Changes and news:
