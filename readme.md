@@ -7,7 +7,7 @@ Nayma CSS Grid is a simple, lightweight (* 3kb gzip *), responsive CSS framework
 #### DEMO on CodePen.io: https://codepen.io/Naymapl/pen/rwpXEg
 #### DEMO on CodePen.io Polska Wersja: https://codepen.io/Naymapl/pen/oeEmqM
 
-#### Polska Dokumentacja: https://github.com/naymaeu/nayma-css-grid/blob/master/Readme-PL.md
+#### Polska Dokumentacja: https://github.com/naymaeu/nayma-css-grid/blob/master/dokumentacja-polska.md
 
 #### GitHub: https://github.com/naymaeu/nayma-css-grid
 #### GitLab: https://gitlab.com/naymapl/nayma-css-grid
