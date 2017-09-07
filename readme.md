@@ -333,6 +333,7 @@ Additional classes that allow you to add padding or margins from the top and bot
 * .is-pull-right
 * .is-pull-left
 * .is-hidden-mobile
+* .is-gapless (use just for .row class)
 
 # Thanks
 

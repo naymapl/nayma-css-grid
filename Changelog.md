@@ -1,5 +1,12 @@
 # Nayma CSS Grid Changelog
 
+## 0.7.1
+
+### Changes and news:
+
+* some improvment in documentation
+* Minor CSS improvment
+
 ## 0.7.0
 
 ### Changes and news:
