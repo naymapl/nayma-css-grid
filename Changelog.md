@@ -1,5 +1,11 @@
 # Nayma CSS Grid Changelog
 
+## 0.7.0
+
+### Changes and news:
+
+* Add class ".is-gapless" for row to setup zero padding and margin for columns
+
 ## 0.6.8
 
 ### Changes and news:

@@ -1,5 +1,5 @@
 /*!
- * Nayma-CSS-Grid v0.6.8
+ * Nayma-CSS-Grid v0.7.0
  * https://github.com/naymaeu/nayma-css-grid
  * https://gitlab.com/naymapl/nayma-css-grid
  * https://www.npmjs.com/package/nayma-css-grid
@@ -543,6 +543,7 @@ li {
     margin-bottom: 1rem;
 }
 
+
 /* Tables */
 
 table {
@@ -588,6 +589,7 @@ ol,
 form {
     margin-bottom: 2.5rem;
 }
+
 
 /* Utilities */
 
@@ -691,6 +693,11 @@ form {
     text-align: center;
 }
 
+.row.is-gapless > .column {
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (max-width: 499px) {
     .is-hidden-mobile {
         display: none;
@@ -779,7 +786,6 @@ a.nav-link:hover {
     padding-top: 3rem;
     text-align: center;
 }
-
 
 /* Mobile navigation styling */
 
